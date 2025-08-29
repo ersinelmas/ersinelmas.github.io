@@ -48,6 +48,43 @@
                 right: 80px;
             }
         }
+
+        @media (max-width: 991.98px) {
+            .ftco-navbar-light .navbar-brand {
+                margin-right: auto;
+            }
+            .ftco-navbar-light .language-switcher {
+                order: 1;
+                margin-left: 15px;
+            }
+            .ftco-navbar-light .navbar-toggler {
+                order: 2;
+            }
+            .ftco_navbar .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    
+        .ftco-navbar-light.scrolled {
+            background: #000000!important;
+            position: fixed;
+        }
+        
+        @media (max-width: 767.98px) {
+            .project .overlay {
+                opacity: .9;
+                background: #2a2a2a;
+            }
+            .project .text {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .project:hover .text {
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
