@@ -20,70 +20,81 @@
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-<style>
-    
-    @media (max-width: 991.98px) {
-        .ftco_navbar .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-        }
-        .navbar-right-controls {
-            display: flex;
-            align-items: center;
-        }
-        .language-switcher {
-            position: static;
-            margin-right: 15px;
-        }
-    }
-
-    @media (max-width: 991.98px) {
-        .navbar-collapse.collapse.show {
-            position: fixed;
+    <style>
+        .ftco-navbar-light.scrolled {
+            position: fixed !important;
             top: 0;
             left: 0;
             right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.98);
-            z-index: 1000;
-            display: flex !important;
-            justify-content: center;
-            align-items: center;
+            background: #000000 !important;
+            transform: translateY(0) !important;
+            opacity: 1 !important;
+            visibility: visible !important;
         }
-        .navbar-collapse .navbar-nav {
-            text-align: center;
-        }
-        .navbar-collapse .navbar-nav .nav-item {
-            margin-bottom: 1rem;
-        }
-        .navbar-collapse .navbar-nav .nav-link {
-            font-size: 1.5rem; /* Menü linklerini büyüt */
-            font-weight: 500;
-            color: #fff !important;
-        }
-        .navbar-toggler {
-            z-index: 1001;
-        }
-    }
-
-    .ftco-navbar-light.scrolled {
-        background: #000000 !important;
-        position: fixed;
-    }
     
-    @media (max-width: 767.98px) {
-        .project .overlay {
-            opacity: .9;
-            background: #2a2a2a;
+        @media (max-width: 991.98px) {
+            .ftco_navbar .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+            .navbar-right-controls {
+                display: flex;
+                align-items: center;
+            }
+            .language-switcher {
+                position: static;
+                margin-right: 15px;
+            }
         }
-        .project .text {
-            opacity: 1;
-            transform: translateY(0);
+    
+        @media (max-width: 991.98px) {
+            .navbar-collapse.collapse.show {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.98);
+                z-index: 1000;
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                transform: none !important;
+                animation: fadeIn 0.3s ease;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            .navbar-collapse .navbar-nav {
+                text-align: center;
+            }
+            .navbar-collapse .navbar-nav .nav-item {
+                margin-bottom: 1rem;
+            }
+            .navbar-collapse .navbar-nav .nav-link {
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #fff !important;
+            }
+            .navbar-toggler {
+                z-index: 1001;
+            }
         }
-    }
-</style>
+        
+        @media (max-width: 767.98px) {
+            .project .overlay {
+                opacity: .9;
+                background: #2a2a2a;
+            }
+            .project .text {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     
