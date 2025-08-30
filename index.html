@@ -17,84 +17,91 @@
       <link rel="stylesheet" href="css/style.css">
       <link rel="icon" type="image/x-icon" href="favicon.ico">
       <style>
-          [data-translate], [data-translate-children] {
-              text-transform: none !important;
-          }
-
-          body.mobile-menu-open {
-              overflow: hidden;
-          }
-
-          .ftco-navbar-light.scrolled {
-              position: fixed !important;
-              top: 0;
-              left: 0;
-              right: 0;
-              background: #000000 !important;
-              transform: translateY(0) !important;
-              opacity: 1 !important;
-              visibility: visible !important;
-          }
-
-          @media (max-width: 991.98px) {
-              .ftco_navbar .container {
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  width: 100%;
-              }
-              .navbar-right-controls {
-                  display: flex;
-                  align-items: center;
-              }
-              .language-switcher {
-                  margin-right: 15px;
-              }
-          }
-      
-          @media (max-width: 991.98px) {
-              .navbar-collapse.collapse.show,
-              .navbar-collapse.collapsing {
-                  position: fixed;
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-                  background: rgba(0, 0, 0, 0.98);
-                  z-index: 1000;
-                  display: flex !important;
-                  justify-content: center;
-                  align-items: center;
-                  transform: none !important;
-                  animation: none;
-                  transition: opacity 0.3s ease;
-              }
-              .navbar-collapse .navbar-nav {
-                  text-align: center;
-              }
-              .navbar-collapse .navbar-nav .nav-item {
-                  margin-bottom: 1.5rem;
-              }
-              .navbar-collapse .navbar-nav .nav-link {
-                  font-size: 1.5rem;
-                  font-weight: 500;
-                  color: #fff !important;
-              }
-              .navbar-toggler {
-                  z-index: 1001;
-              }
-          }
-          
-          @media (max-width: 767.98px) {
-              .project .overlay {
-                  opacity: .9;
-                  background: #2a2a2a;
-              }
-              .project .text {
-                  opacity: 1;
-                  transform: translateY(0);
-              }
-          }
+         [data-translate], [data-translate-children] {
+         text-transform: none !important;
+         }
+         body.mobile-menu-open {
+         overflow: hidden;
+         }
+         .ftco-navbar-light.scrolled {
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+         background: #000000 !important;
+         z-index: 999;
+         }
+         @media (max-width: 991.98px) {
+         .ftco_navbar {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         background: transparent;
+         z-index: 999;
+         }
+         .ftco_navbar.scrolled {
+         background: #000000 !important;
+         }
+         .ftco_navbar .container {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+         }
+         .navbar-right-controls {
+         display: flex;
+         align-items: center;
+         }
+         .language-switcher {
+         margin-right: 15px;
+         }
+         .navbar-collapse.collapse.show {
+         display: flex !important;
+         justify-content: center;
+         align-items: center;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100vw;
+         height: 100vh;
+         background: rgba(0, 0, 0, 0.98);
+         z-index: 1000;
+         transform: none !important;
+         transition: opacity 0.3s ease;
+         animation: none;
+         opacity: 1;
+         }
+         .navbar-collapse.collapsing {
+         opacity: 0;
+         transition: opacity 0.3s ease;
+         }
+         .navbar-collapse .navbar-nav {
+         text-align: center;
+         }
+         .navbar-collapse .navbar-nav .nav-item {
+         margin-bottom: 1rem;
+         }
+         .navbar-collapse .navbar-nav .nav-link {
+         font-size: 1.5rem;
+         font-weight: 500;
+         color: #fff !important;
+         }
+         .navbar-toggler {
+         z-index: 1001;
+         position: relative;
+         }
+         }
+         @media (max-width: 767.98px) {
+         .project .overlay {
+         opacity: .9;
+         background: #2a2a2a;
+         }
+         .project .text {
+         opacity: 1;
+         transform: translateY(0);
+         }
+         }
       </style>
    </head>
    <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -478,75 +485,88 @@
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
          </svg>
       </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/scrollax.min.js"></script>
+      <script src="js/main.js"></script>
       <script>
-          document.addEventListener('DOMContentLoaded', function() {
-              const translations = {};
-              
-              async function loadTranslations(lang) {
-                  try {
-                      const response = await fetch(`lang/${lang}.json?v=${new Date().getTime()}`); 
-                      if (!response.ok) throw new Error(`Could not load ${lang}.json`);
-                      translations[lang] = await response.json();
-                  } catch (error) {
-                      console.error("Translation loading error:", error);
-                  }
-              }
-              
-              function applyTranslations(lang) {
-                  const langData = translations[lang];
-                  if (!langData) return;
-                  
-                  document.querySelectorAll('[data-translate]').forEach(el => {
-                      const key = el.getAttribute('data-translate');
-                      if (langData[key]) el.innerHTML = langData[key];
-                  });
-                  
-                  document.querySelectorAll('[data-translate-children]').forEach(el => {
-                      const key = el.getAttribute('data-translate-children');
-                      if (langData[key]) el.innerHTML = langData[key];
-                  });
-                  
-                  document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
-                  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-                  localStorage.setItem('language', lang);
-              }
-              
-              async function setLanguage(lang) {
-                  if (!translations[lang]) {
-                      await loadTranslations(lang);
-                  }
-                  applyTranslations(lang);
-              }
-              
-              document.getElementById('btn-tr').addEventListener('click', () => setLanguage('tr'));
-              document.getElementById('btn-en').addEventListener('click', () => setLanguage('en'));
-              
-              const savedLang = localStorage.getItem('language') || 'tr';
-              setLanguage(savedLang);
+         document.addEventListener('DOMContentLoaded', function() {
+             const translations = {};
              
-              const menu = document.getElementById('ftco-nav');
-              const toggler = document.querySelector('.navbar-toggler');
-              const menuLinks = document.querySelectorAll('#ftco-nav .nav-link');
-          
-              document.addEventListener('click', function(event) {
-                  if (!menu.contains(event.target) && !toggler.contains(event.target) && menu.classList.contains('show')) {
-                      toggler.click(); 
-                  }
-              });
-          
-              menuLinks.forEach(function(link) {
-                  link.addEventListener('click', function() {
-                      if (menu.classList.contains('show')) {
-                          toggler.click();
-                      }
-                  });
-              });
-              
-              toggler.addEventListener('click', function() {
-                  document.body.classList.toggle('mobile-menu-open');
-              });
-          
-          });
+             async function loadTranslations(lang) {
+                 try {
+                     const response = await fetch(`lang/${lang}.json?v=1.0.0`);
+                     if (!response.ok) throw new Error(`Could not load ${lang}.json`);
+                     translations[lang] = await response.json();
+                 } catch (error) {
+                     console.error("Translation loading error:", error);
+                 }
+             }
+             
+             function applyTranslations(lang) {
+                 const langData = translations[lang];
+                 if (!langData) return;
+                 
+                 document.querySelectorAll('[data-translate]').forEach(el => {
+                     const key = el.getAttribute('data-translate');
+                     if (langData[key]) el.innerHTML = langData[key];
+                 });
+                 
+                 document.querySelectorAll('[data-translate-children]').forEach(el => {
+                     const key = el.getAttribute('data-translate-children');
+                     if (langData[key]) el.innerHTML = langData[key];
+                 });
+                 
+                 document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+                 document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+                 localStorage.setItem('language', lang);
+             }
+             
+             async function setLanguage(lang) {
+                 if (!translations[lang]) {
+                     await loadTranslations(lang);
+                 }
+                 applyTranslations(lang);
+             }
+             
+             document.getElementById('btn-tr').addEventListener('click', () => setLanguage('tr'));
+             document.getElementById('btn-en').addEventListener('click', () => setLanguage('en'));
+             
+             const savedLang = localStorage.getItem('language') || 'tr';
+             setLanguage(savedLang);
+         
+             const menu = document.getElementById('ftco-nav');
+             const toggler = document.querySelector('.navbar-toggler');
+             const menuLinks = document.querySelectorAll('#ftco-nav .nav-link');
+         
+             document.addEventListener('click', function(event) {
+                 if (!menu.contains(event.target) && !toggler.contains(event.target) && menu.classList.contains('show')) {
+                     toggler.click(); 
+                 }
+             });
+         
+             menuLinks.forEach(function(link) {
+                 link.addEventListener('click', function() {
+                     if (menu.classList.contains('show')) {
+                         toggler.click();
+                     }
+                 });
+             });
+             
+             toggler.addEventListener('click', function() {
+                 document.body.classList.toggle('mobile-menu-open');
+             });
+         
+         });
       </script>
    </body>
 </html>
