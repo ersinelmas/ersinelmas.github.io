@@ -17,6 +17,9 @@
       <link rel="stylesheet" href="css/style.css">
       <link rel="icon" type="image/x-icon" href="favicon.ico">
       <style>
+         [data-translate], [data-translate-children] {
+         text-transform: none !important;
+         }
          body.mobile-menu-open {
          overflow: hidden;
          }
@@ -107,8 +110,8 @@
             <a class="navbar-brand" href="index.html">Ersin Elmas</a>
             <div class="navbar-right-controls">
                <div class="language-switcher">
-                  <button onclick="setLanguage('tr')" class="lang-btn active" id="btn-tr">TR</button>
-                  <button onclick="setLanguage('en')" class="lang-btn" id="btn-en">EN</button>
+                  <button class="lang-btn active" id="btn-tr">TR</button>
+                  <button class="lang-btn" id="btn-en">EN</button>
                </div>
                <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="oi oi-menu"></span> Menu
@@ -116,13 +119,13 @@
             </div>
             <div class="collapse navbar-collapse" id="ftco-nav">
                <ul class="navbar-nav nav ml-auto">
-                  <li class="nav-item"><a href="#home-section" class="nav-link"><span data-translate="nav_home" style="text-transform: none;"></span></a></li>
-                  <li class="nav-item"><a href="#about-section" class="nav-link"><span data-translate="nav_about" style="text-transform: none;"></span></a></li>
-                  <li class="nav-item"><a href="#resume-section" class="nav-link"><span data-translate="nav_resume" style="text-transform: none;"></span></a></li>
-                  <li class="nav-item"><a href="#services-section" class="nav-link"><span data-translate="nav_services" style="text-transform: none;"></span></a></li>
-                  <li class="nav-item"><a href="#projects-section" class="nav-link"><span data-translate="nav_projects" style="text-transform: none;"></span></a></li>
-                  <li class="nav-item"><a href="#blog-section" class="nav-link"><span data-translate="nav_blog" style="text-transform: none;"></span></a></li>
-                  <li class="nav-item"><a href="#contact-section" class="nav-link"><span data-translate="nav_contact" style="text-transform: none;"></span></a></li>
+                  <li class="nav-item"><a href="#home-section" class="nav-link"><span data-translate="nav_home"></span></a></li>
+                  <li class="nav-item"><a href="#about-section" class="nav-link"><span data-translate="nav_about"></span></a></li>
+                  <li class="nav-item"><a href="#resume-section" class="nav-link"><span data-translate="nav_resume"></span></a></li>
+                  <li class="nav-item"><a href="#services-section" class="nav-link"><span data-translate="nav_services"></span></a></li>
+                  <li class="nav-item"><a href="#projects-section" class="nav-link"><span data-translate="nav_projects"></span></a></li>
+                  <li class="nav-item"><a href="#blog-section" class="nav-link"><span data-translate="nav_blog"></span></a></li>
+                  <li class="nav-item"><a href="#contact-section" class="nav-link"><span data-translate="nav_contact"></span></a></li>
                </ul>
             </div>
          </div>
@@ -135,9 +138,9 @@
                   <div class="text">
                      <span class="subheading" data-translate="hero_subtitle"></span>
                      <h1 class="mb-4 mt-3" data-translate="hero_title"></h1>
-                     <p class="mb-4" data-translate="hero_description" style="text-transform: none;"></p>
-                     <p><a href="#contact-section" class="btn btn-primary py-3 px-4" data-translate="hero_btn_contact" style="text-transform: none;"></a> 
-                        <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4" data-translate="hero_btn_projects" style="text-transform: none;"></a>
+                     <p class="mb-4" data-translate="hero_description"></p>
+                     <p><a href="#contact-section" class="btn btn-primary py-3 px-4" data-translate="hero_btn_contact"></a> 
+                        <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4" data-translate="hero_btn_projects"></a>
                      </p>
                   </div>
                </div>
@@ -150,14 +153,14 @@
                <div class="col-md-12 col-lg-12 pl-lg-5 pb-5">
                   <div class="row justify-content-start pb-3">
                      <div class="col-md-12 heading-section ftco-animate">
-                        <h1 class="big" data-translate="about_big_title" style="text-transform: none;"></h1>
-                        <h2 class="mb-4" data-translate="about_title" style="text-transform: none;"></h2>
-                        <p data-translate="about_description" style="text-transform: none;"></p>
+                        <h1 class="big" data-translate="about_big_title"></h1>
+                        <h2 class="mb-4" data-translate="about_title"></h2>
+                        <p data-translate="about_description"></p>
                         <ul class="about-info mt-4 px-md-0 px-2">
-                           <li class="d-flex"><span data-translate="about_name" style="text-transform: none;"></span> <span>Ersin Elmas</span></li>
-                           <li class="d-flex"><span data-translate="about_email" style="text-transform: none;"></span> <span>ersinelmas17@gmail.com</span></li>
-                           <li class="d-flex"><span data-translate="about_phone" style="text-transform: none;"></span> <span>+90 543 306 3014</span></li>
-                           <li class="d-flex"><span data-translate="about_location" style="text-transform: none;"></span> <span data-translate="contact_location_text"></span></li>
+                           <li class="d-flex"><span data-translate="about_name"></span> <span>Ersin Elmas</span></li>
+                           <li class="d-flex"><span data-translate="about_email"></span> <span>ersinelmas17@gmail.com</span></li>
+                           <li class="d-flex"><span data-translate="about_phone"></span> <span>+90 543 306 3014</span></li>
+                           <li class="d-flex"><span data-translate="about_location"></span> <span data-translate="contact_location_text"></span></li>
                         </ul>
                      </div>
                   </div>
@@ -165,9 +168,9 @@
                      <div class="text">
                         <p class="mb-4">
                            <span class="number" data-number="10">0</span>
-                           <span data-translate="about_counter_text" style="text-transform: none;"></span>
+                           <span data-translate="about_counter_text"></span>
                         </p>
-                        <p><a href="CV-Ersin-Elmas.pdf" target="_blank" class="btn btn-primary py-3 px-3" data-translate="about_btn_cv" style="text-transform: none;"></a></p>
+                        <p><a href="CV-Ersin-Elmas.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-3" data-translate="about_btn_cv"></a></p>
                      </div>
                   </div>
                </div>
@@ -178,34 +181,34 @@
          <div class="container">
             <div class="row justify-content-center pb-5">
                <div class="col-md-10 heading-section text-center ftco-animate">
-                  <h1 class="big big-2" data-translate="resume_big_title" style="text-transform: none;"></h1>
-                  <h2 class="mb-4" data-translate="resume_title" style="text-transform: none;"></h2>
-                  <p data-translate="resume_description" style="text-transform: none;"></p>
+                  <h1 class="big big-2" data-translate="resume_big_title"></h1>
+                  <h2 class="mb-4" data-translate="resume_title"></h2>
+                  <p data-translate="resume_description"></p>
                </div>
             </div>
             <div class="row">
                <div class="col-md-6">
                   <div class="resume-wrap ftco-animate">
                      <span class="date">07/2024 - 04/2025</span>
-                     <h2 data-translate="resume_job1_title" style="text-transform: none;"></h2>
-                     <span class="position" data-translate="resume_job1_company" style="text-transform: none;"></span>
+                     <h2 data-translate="resume_job1_title"></h2>
+                     <span class="position" data-translate="resume_job1_company"></span>
                      <p class="mt-4">
                      <ul>
-                        <li data-translate="resume_job1_desc1" style="text-transform: none;"></li>
-                        <li data-translate="resume_job1_desc2" style="text-transform: none;"></li>
-                        <li data-translate="resume_job1_desc3" style="text-transform: none;"></li>
+                        <li data-translate="resume_job1_desc1"></li>
+                        <li data-translate="resume_job1_desc2"></li>
+                        <li data-translate="resume_job1_desc3"></li>
                      </ul>
                      </p>
                   </div>
                   <div class="resume-wrap ftco-animate">
                      <span class="date">06/2022 - 08/2023</span>
-                     <h2 data-translate="resume_job2_title" style="text-transform: none;"></h2>
-                     <span class="position" data-translate="resume_job2_company" style="text-transform: none;"></span>
+                     <h2 data-translate="resume_job2_title"></h2>
+                     <span class="position" data-translate="resume_job2_company"></span>
                      <p class="mt-4">
                      <ul>
-                        <li data-translate="resume_job2_desc1" style="text-transform: none;"></li>
-                        <li data-translate="resume_job2_desc2" style="text-transform: none;"></li>
-                        <li data-translate="resume_job2_desc3" style="text-transform: none;"></li>
+                        <li data-translate="resume_job2_desc1"></li>
+                        <li data-translate="resume_job2_desc2"></li>
+                        <li data-translate="resume_job2_desc3"></li>
                      </ul>
                      </p>
                   </div>
@@ -213,15 +216,15 @@
                <div class="col-md-6">
                   <div class="resume-wrap ftco-animate">
                      <span class="date">08/2019 - 07/2023</span>
-                     <h2 data-translate="resume_edu1_degree" style="text-transform: none;"></h2>
-                     <span class="position" data-translate="resume_edu1_university" style="text-transform: none;"></span>
-                     <p class="mt-4" data-translate="resume_edu1_desc" style="text-transform: none;"></p>
+                     <h2 data-translate="resume_edu1_degree"></h2>
+                     <span class="position" data-translate="resume_edu1_university"></span>
+                     <p class="mt-4" data-translate="resume_edu1_desc"></p>
                   </div>
                </div>
             </div>
             <div class="row justify-content-center mt-5">
                <div class="col-md-6 text-center ftco-animate">
-                  <p><a href="CV-Ersin-Elmas.pdf" target="_blank" class="btn btn-primary py-4 px-5" data-translate="about_btn_cv" style="text-transform: none;"></a></p>
+                  <p><a href="CV-Ersin-Elmas.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-4 px-5" data-translate="about_btn_cv"></a></p>
                </div>
             </div>
          </div>
@@ -230,9 +233,9 @@
          <div class="container">
             <div class="row justify-content-center py-5 mt-5">
                <div class="col-md-12 heading-section text-center ftco-animate">
-                  <h1 class="big big-2" data-translate="services_big_title" style="text-transform: none;"></h1>
-                  <h2 class="mb-4" data-translate="services_title" style="text-transform: none;"></h2>
-                  <p data-translate="services_description" style="text-transform: none;"></p>
+                  <h1 class="big big-2" data-translate="services_big_title"></h1>
+                  <h2 class="mb-4" data-translate="services_title"></h2>
+                  <p data-translate="services_description"></p>
                </div>
             </div>
             <div class="row">
@@ -240,8 +243,8 @@
                   <a class="services-1">
                      <span class="icon"><i class="flaticon-analysis"></i></span>
                      <div class="desc">
-                        <h3 class="mb-5" data-translate="service1_title" style="text-transform: none;"></h3>
-                        <p data-translate="service1_desc" style="text-transform: none;"></p>
+                        <h3 class="mb-5" data-translate="service1_title"></h3>
+                        <p data-translate="service1_desc"></p>
                      </div>
                   </a>
                </div>
@@ -249,8 +252,8 @@
                   <a class="services-1">
                      <span class="icon"><i class="flaticon-ideas"></i></span>
                      <div class="desc">
-                        <h3 class="mb-5" data-translate="service2_title" style="text-transform: none;"></h3>
-                        <p data-translate="service2_desc" style="text-transform: none;"></p>
+                        <h3 class="mb-5" data-translate="service2_title"></h3>
+                        <p data-translate="service2_desc"></p>
                      </div>
                   </a>
                </div>
@@ -258,8 +261,8 @@
                   <a class="services-1">
                      <span class="icon"><i class="flaticon-flasks"></i></span>
                      <div class="desc">
-                        <h3 class="mb-5" data-translate="service3_title" style="text-transform: none;"></h3>
-                        <p data-translate="service3_desc" style="text-transform: none;"></p>
+                        <h3 class="mb-5" data-translate="service3_title"></h3>
+                        <p data-translate="service3_desc"></p>
                      </div>
                   </a>
                </div>
@@ -267,8 +270,8 @@
                   <a class="services-1">
                      <span class="icon"><i class="icon-layers"></i></span>
                      <div class="desc">
-                        <h3 class="mb-5" data-translate="service4_title" style="text-transform: none;"></h3>
-                        <p data-translate="service4_desc" style="text-transform: none;"></p>
+                        <h3 class="mb-5" data-translate="service4_title"></h3>
+                        <p data-translate="service4_desc"></p>
                      </div>
                   </a>
                </div>
@@ -276,8 +279,8 @@
                   <a class="services-1">
                      <span class="icon"><i class="icon-git"></i></span>
                      <div class="desc">
-                        <h3 class="mb-5" data-translate="service5_title" style="text-transform: none;"></h3>
-                        <p data-translate="service5_desc" style="text-transform: none;"></p>
+                        <h3 class="mb-5" data-translate="service5_title"></h3>
+                        <p data-translate="service5_desc"></p>
                      </div>
                   </a>
                </div>
@@ -285,8 +288,8 @@
                   <a class="services-1">
                      <span class="icon"><i class="icon-people"></i></span>
                      <div class="desc">
-                        <h3 class="mb-5" data-translate="service6_title" style="text-transform: none;"></h3>
-                        <p data-translate="service6_desc" style="text-transform: none;"></p>
+                        <h3 class="mb-5" data-translate="service6_title"></h3>
+                        <p data-translate="service6_desc"></p>
                      </div>
                   </a>
                </div>
@@ -297,39 +300,39 @@
          <div class="container">
             <div class="row justify-content-center pb-5">
                <div class="col-md-12 heading-section text-center ftco-animate">
-                  <h1 class="big big-2" data-translate="skills_big_title" style="text-transform: none;"></h1>
-                  <h2 class="mb-4" data-translate="skills_title" style="text-transform: none;"></h2>
-                  <p data-translate="skills_description" style="text-transform: none;"></p>
+                  <h1 class="big big-2" data-translate="skills_big_title"></h1>
+                  <h2 class="mb-4" data-translate="skills_title"></h2>
+                  <p data-translate="skills_description"></p>
                </div>
             </div>
             <div class="row">
                <div class="col-md-6 animate-box">
                   <div class="progress-wrap ftco-animate">
-                     <h3 data-translate="skill1_name" style="text-transform: none;"></h3>
+                     <h3 data-translate="skill1_name"></h3>
                      <div class="progress">
-                        <div class="progress-bar color-1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"><span>95%</span></div>
+                        <div class="progress-bar color-1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div>
                      </div>
                   </div>
                </div>
                <div class="col-md-6 animate-box">
                   <div class="progress-wrap ftco-animate">
-                     <h3 data-translate="skill2_name" style="text-transform: none;"></h3>
+                     <h3 data-translate="skill2_name"></h3>
                      <div class="progress">
-                        <div class="progress-bar color-2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div>
+                        <div class="progress-bar color-2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:75%"><span>75%</span></div>
                      </div>
                   </div>
                </div>
                <div class="col-md-6 animate-box">
                   <div class="progress-wrap ftco-animate">
-                     <h3 data-translate="skill3_name" style="text-transform: none;"></h3>
+                     <h3 data-translate="skill3_name"></h3>
                      <div class="progress">
-                        <div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"><span>95%</span></div>
+                        <div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:85%"><span>85%</span></div>
                      </div>
                   </div>
                </div>
                <div class="col-md-6 animate-box">
                   <div class="progress-wrap ftco-animate">
-                     <h3 data-translate="skill4_name" style="text-transform: none;"></h3>
+                     <h3 data-translate="skill4_name"></h3>
                      <div class="progress">
                         <div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div>
                      </div>
@@ -337,7 +340,7 @@
                </div>
                <div class="col-md-6 animate-box">
                   <div class="progress-wrap ftco-animate">
-                     <h3 data-translate="skill5_name" style="text-transform: none;"></h3>
+                     <h3 data-translate="skill5_name"></h3>
                      <div class="progress">
                         <div class="progress-bar color-5" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"><span>85%</span></div>
                      </div>
@@ -345,9 +348,9 @@
                </div>
                <div class="col-md-6 animate-box">
                   <div class="progress-wrap ftco-animate">
-                     <h3 data-translate="skill6_name" style="text-transform: none;"></h3>
+                     <h3 data-translate="skill6_name"></h3>
                      <div class="progress">
-                        <div class="progress-bar color-6" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"><span>95%</span></div>
+                        <div class="progress-bar color-6" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div>
                      </div>
                   </div>
                </div>
@@ -358,30 +361,30 @@
          <div class="container">
             <div class="row justify-content-center pb-5">
                <div class="col-md-12 heading-section text-center ftco-animate">
-                  <h1 class="big big-2" data-translate="projects_big_title" style="text-transform: none;"></h1>
-                  <h2 class="mb-4" data-translate="projects_title" style="text-transform: none;"></h2>
-                  <p data-translate="projects_description" style="text-transform: none;"></p>
+                  <h1 class="big big-2" data-translate="projects_big_title"></h1>
+                  <h2 class="mb-4" data-translate="projects_title"></h2>
+                  <p data-translate="projects_description"></p>
                </div>
             </div>
             <div class="row">
                <div class="col-md-6">
                   <div class="project img ftco-animate" style="background-image: url(images/project-1.jpg);">
-                     <a href="https://github.com/ersinelmas/RisenCore" target="_blank" class="d-flex justify-content-center align-items-center w-100 h-100">
+                     <a href="https://github.com/ersinelmas/RisenCore" target="_blank" rel="noopener noreferrer" class="d-flex justify-content-center align-items-center w-100 h-100">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                           <h3 data-translate="project1_title" style="text-transform: none; color: white;"></h3>
-                           <span data-translate="project1_tech" style="text-transform: none;"></span>
+                           <h3 data-translate="project1_title" style="color: white;"></h3>
+                           <span data-translate="project1_tech"></span>
                         </div>
                      </a>
                   </div>
                </div>
                <div class="col-md-6">
                   <div class="project img ftco-animate" style="background-image: url(images/project-2.jpg);">
-                     <a href="https://github.com/ersinelmas/Turkcell-CRM" target="_blank" class="d-flex justify-content-center align-items-center w-100 h-100">
+                     <a href="https://github.com/ersinelmas/Turkcell-CRM" target="_blank" rel="noopener noreferrer" class="d-flex justify-content-center align-items-center w-100 h-100">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                           <h3 data-translate="project2_title" style="text-transform: none; color: white;"></h3>
-                           <span data-translate="project2_tech" style="text-transform: none;"></span>
+                           <h3 data-translate="project2_title" style="color: white;"></h3>
+                           <span data-translate="project2_tech"></span>
                         </div>
                      </a>
                   </div>
@@ -393,33 +396,33 @@
          <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                <div class="col-md-7 heading-section text-center ftco-animate">
-                  <h1 class="big big-2" data-translate="blog_big_title" style="text-transform: none;"></h1>
-                  <h2 class="mb-4" data-translate="blog_title" style="text-transform: none;"></h2>
-                  <p data-translate="blog_description" style="text-transform: none;"></p>
+                  <h1 class="big big-2" data-translate="blog_big_title"></h1>
+                  <h2 class="mb-4" data-translate="blog_title"></h2>
+                  <p data-translate="blog_description"></p>
                </div>
             </div>
             <div class="row d-flex">
                <div class="col-md-6 d-flex ftco-animate">
                   <div class="blog-entry justify-content-end">
-                     <a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" class="block-20" style="background-image: url('images/image_1.jpg');"></a>
+                     <a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" rel="noopener noreferrer" class="block-20" style="background-image: url('images/image_1.jpg');"></a>
                      <div class="text mt-3 float-right d-block">
                         <div class="d-flex align-items-center mb-3 meta">
-                           <p class="mb-0"><a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" class="mr-2" data-translate="blog_read_more"></a></p>
+                           <p class="mb-0"><a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" rel="noopener noreferrer" class="mr-2" data-translate="blog_read_more"></a></p>
                         </div>
-                        <h3 class="heading"><a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" data-translate="blog1_title" style="text-transform: none;"></a></h3>
-                        <p data-translate="blog1_desc" style="text-transform: none;"></p>
+                        <h3 class="heading"><a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" rel="noopener noreferrer" data-translate="blog1_title"></a></h3>
+                        <p data-translate="blog1_desc"></p>
                      </div>
                   </div>
                </div>
                <div class="col-md-6 d-flex ftco-animate">
                   <div class="blog-entry justify-content-end">
-                     <a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" class="block-20" style="background-image: url('images/image_2.jpg');"></a>
+                     <a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" rel="noopener noreferrer" class="block-20" style="background-image: url('images/image_2.jpg');"></a>
                      <div class="text mt-3 float-right d-block">
                         <div class="d-flex align-items-center mb-3 meta">
-                           <p class="mb-0"><a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" class="mr-2" data-translate="blog_read_more"></a></p>
+                           <p class="mb-0"><a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" rel="noopener noreferrer" class="mr-2" data-translate="blog_read_more"></a></p>
                         </div>
-                        <h3 class="heading"><a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" data-translate="blog2_title" style="text-transform: none;"></a></h3>
-                        <p data-translate="blog2_desc" style="text-transform: none;"></p>
+                        <h3 class="heading"><a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" rel="noopener noreferrer" data-translate="blog2_title"></a></h3>
+                        <p data-translate="blog2_desc"></p>
                      </div>
                   </div>
                </div>
@@ -430,38 +433,38 @@
          <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                <div class="col-md-7 heading-section text-center ftco-animate">
-                  <h1 class="big big-2" data-translate="contact_big_title" style="text-transform: none;"></h1>
-                  <h2 class="mb-4" data-translate="contact_title" style="text-transform: none;"></h2>
-                  <p data-translate="contact_description" style="text-transform: none;"></p>
+                  <h1 class="big big-2" data-translate="contact_big_title"></h1>
+                  <h2 class="mb-4" data-translate="contact_title"></h2>
+                  <p data-translate="contact_description"></p>
                </div>
             </div>
             <div class="row d-flex contact-info mb-5">
                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
                   <div class="align-self-stretch box p-4 text-center">
                      <div class="icon d-flex align-items-center justify-content-center"><span class="icon-map-signs"></span></div>
-                     <h3 class="mb-4" data-translate="contact1_title" style="text-transform: none;"></h3>
+                     <h3 class="mb-4" data-translate="contact1_title"></h3>
                      <p data-translate="contact_location_text"></p>
                   </div>
                </div>
                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
                   <div class="align-self-stretch box p-4 text-center">
                      <div class="icon d-flex align-items-center justify-content-center"><span class="icon-phone2"></span></div>
-                     <h3 class="mb-4" data-translate="contact2_title" style="text-transform: none;"></h3>
+                     <h3 class="mb-4" data-translate="contact2_title"></h3>
                      <p><a href="tel://+905433063014">+90 543 306 3014</a></p>
                   </div>
                </div>
                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
                   <div class="align-self-stretch box p-4 text-center">
                      <div class="icon d-flex align-items-center justify-content-center"><span class="icon-paper-plane"></span></div>
-                     <h3 class="mb-4" data-translate="contact3_title" style="text-transform: none;"></h3>
+                     <h3 class="mb-4" data-translate="contact3_title"></h3>
                      <p><a href="mailto:ersinelmas17@gmail.com">ersinelmas17@gmail.com</a></p>
                   </div>
                </div>
                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
                   <div class="align-self-stretch box p-4 text-center">
                      <div class="icon d-flex align-items-center justify-content-center"><span class="icon-globe"></span></div>
-                     <h3 class="mb-4" data-translate="contact4_title" style="text-transform: none;"></h3>
-                     <p><a href="https://linkedin.com/in/ersin-elmas" target="_blank">LinkedIn</a> <br> <a href="https://github.com/ersinelmas" target="_blank">GitHub</a></p>
+                     <h3 class="mb-4" data-translate="contact4_title"></h3>
+                     <p><a href="https://linkedin.com/in/ersin-elmas" target="_blank" rel="noopener noreferrer">LinkedIn</a> <br> <a href="https://github.com/ersinelmas" target="_blank" rel="noopener noreferrer">GitHub</a></p>
                   </div>
                </div>
             </div>
@@ -496,99 +499,75 @@
       <script src="js/scrollax.min.js"></script>
       <script src="js/main.js"></script>
       <script>
-         const translations = {};
-         
-         async function loadTranslations(lang) {
-             try {
-                 const response = await fetch(`lang/${lang}.json?v=${new Date().getTime()}`); // Cache busting
-                 if (!response.ok) {
-                     throw new Error(`Could not load ${lang}.json`);
-                 }
-                 translations[lang] = await response.json();
-             } catch (error) {
-                 console.error("Translation loading error:", error);
-             }
-         }
-         
-         function applyTranslations(lang) {
-             const langData = translations[lang];
-             if (!langData) return;
-         
-             document.querySelectorAll('[data-translate]').forEach(element => {
-                 const key = element.getAttribute('data-translate');
-                 if (langData[key]) {
-                     element.innerHTML = langData[key];
-                 }
-             });
-         
-             document.querySelectorAll('[data-translate-children]').forEach(element => {
-                 const key = element.getAttribute('data-translate-children');
-                 const translation = langData[key];
-                 if (translation) {
-                     const tempDiv = document.createElement('div');
-                     tempDiv.innerHTML = translation;
-                     
-                     const scriptTag = element.querySelector('script');
-                     const linkTag = element.querySelector('a');
-         
-                     element.innerHTML = tempDiv.innerHTML;
-         
-                     // Re-append script tag if it exists to ensure it runs
-                     if (scriptTag) element.appendChild(scriptTag);
-                 }
-             });
-         
-             document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
-             document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-             localStorage.setItem('language', lang);
-         }
-         
-         async function setLanguage(lang) {
-             if (!translations[lang]) {
-                 await loadTranslations(lang);
-             }
-             applyTranslations(lang);
-         }
-         
-         document.addEventListener('DOMContentLoaded', () => {
-             const savedLang = localStorage.getItem('language') || 'tr';
-             setLanguage(savedLang);
-         });
-      </script>
-      <script>
          document.addEventListener('DOMContentLoaded', function() {
              
-             document.addEventListener('click', function(event) {
-                 var menu = document.getElementById('ftco-nav');
-                 var toggler = document.querySelector('.navbar-toggler');
+             // --- DİL YÖNETİMİ ---
+             const translations = {};
+             
+             async function loadTranslations(lang) {
+                 try {
+                     const response = await fetch(`lang/${lang}.json?v=1.0.0`);
+                     if (!response.ok) throw new Error(`Could not load ${lang}.json`);
+                     translations[lang] = await response.json();
+                 } catch (error) {
+                     console.error("Translation loading error:", error);
+                 }
+             }
+             
+             function applyTranslations(lang) {
+                 const langData = translations[lang];
+                 if (!langData) return;
+                 
+                 document.querySelectorAll('[data-translate]').forEach(el => {
+                     const key = el.getAttribute('data-translate');
+                     if (langData[key]) el.innerHTML = langData[key];
+                 });
+                 
+                 document.querySelectorAll('[data-translate-children]').forEach(el => {
+                     const key = el.getAttribute('data-translate-children');
+                     if (langData[key]) el.innerHTML = langData[key];
+                 });
+                 
+                 document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+                 document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+                 localStorage.setItem('language', lang);
+             }
+             
+             async function setLanguage(lang) {
+                 if (!translations[lang]) {
+                     await loadTranslations(lang);
+                 }
+                 applyTranslations(lang);
+             }
+             
+             document.getElementById('btn-tr').addEventListener('click', () => setLanguage('tr'));
+             document.getElementById('btn-en').addEventListener('click', () => setLanguage('en'));
+             
+             const savedLang = localStorage.getItem('language') || 'tr';
+             setLanguage(savedLang);
          
+             const menu = document.getElementById('ftco-nav');
+             const toggler = document.querySelector('.navbar-toggler');
+             const menuLinks = document.querySelectorAll('#ftco-nav .nav-link');
+         
+             document.addEventListener('click', function(event) {
                  if (!menu.contains(event.target) && !toggler.contains(event.target) && menu.classList.contains('show')) {
-                     toggler.click();
+                     toggler.click(); 
                  }
              });
-             var navLinks = document.querySelectorAll('#ftco-nav .nav-link');
-             navLinks.forEach(function(link) {
+         
+             menuLinks.forEach(function(link) {
                  link.addEventListener('click', function() {
-                     var menu = document.getElementById('ftco-nav');
                      if (menu.classList.contains('show')) {
-                         document.querySelector('.navbar-toggler').click();
+                         toggler.click();
                      }
                  });
              });
-             var toggler = document.querySelector('.navbar-toggler');
              
              toggler.addEventListener('click', function() {
                  document.body.classList.toggle('mobile-menu-open');
              });
          
-             var menuLinks = document.querySelectorAll('#ftco-nav .nav-link');
-             menuLinks.forEach(function(link) {
-                 link.addEventListener('click', function() {
-                     if (document.body.classList.contains('mobile-menu-open')) {
-                         document.body.classList.remove('mobile-menu-open');
-                     }
-                 });
-             });
          });
       </script>
    </body>
