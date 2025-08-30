@@ -1,570 +1,595 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Ersin Elmas | Yazılım Geliştirici</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-    <style>
-        .ftco-navbar-light.scrolled {
-            position: fixed !important;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: #000000 !important;
-            transform: translateY(0) !important;
-            opacity: 1 !important;
-            visibility: visible !important;
-        }
-    
-        @media (max-width: 991.98px) {
-            .ftco_navbar .container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-            }
-            .navbar-right-controls {
-                display: flex;
-                align-items: center;
-            }
-            .language-switcher {
-                position: static;
-                margin-right: 15px;
-            }
-        }
-    
-        @media (max-width: 991.98px) {
-            .navbar-collapse.collapse.show {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.98);
-                z-index: 1000;
-                display: flex !important;
-                justify-content: center;
-                align-items: center;
-                transform: none !important;
-                animation: fadeIn 0.3s ease;
-            }
-            @keyframes fadeIn {
-                from { opacity: 0; }
-                to { opacity: 1; }
-            }
-            .navbar-collapse .navbar-nav {
-                text-align: center;
-            }
-            .navbar-collapse .navbar-nav .nav-item {
-                margin-bottom: 1rem;
-            }
-            .navbar-collapse .navbar-nav .nav-link {
-                font-size: 1.5rem;
-                font-weight: 500;
-                color: #fff !important;
-            }
-            .navbar-toggler {
-                z-index: 1001;
-            }
-        }
-        
-        @media (max-width: 767.98px) {
-            .project .overlay {
-                opacity: .9;
-                background: #2a2a2a;
-            }
-            .project .text {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-</head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-        <div class="container">
+   <head>
+      <title>Ersin Elmas | Yazılım Geliştirici</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="css/magnific-popup.css">
+      <link rel="stylesheet" href="css/aos.css">
+      <link rel="stylesheet" href="css/ionicons.min.css">
+      <link rel="stylesheet" href="css/flaticon.css">
+      <link rel="stylesheet" href="css/icomoon.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <style>
+         body.mobile-menu-open {
+         overflow: hidden;
+         }
+         .ftco-navbar-light.scrolled {
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+         background: #000000 !important;
+         z-index: 999;
+         }
+         @media (max-width: 991.98px) {
+         .ftco_navbar {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         background: transparent;
+         z-index: 999;
+         }
+         .ftco_navbar.scrolled {
+         background: #000000 !important;
+         }
+         .ftco_navbar .container {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+         }
+         .navbar-right-controls {
+         display: flex;
+         align-items: center;
+         }
+         .language-switcher {
+         margin-right: 15px;
+         }
+         .navbar-collapse.collapse.show {
+         display: flex !important;
+         justify-content: center;
+         align-items: center;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100vw;
+         height: 100vh;
+         background: rgba(0, 0, 0, 0.98);
+         z-index: 1000;
+         transform: none !important;
+         transition: opacity 0.3s ease;
+         animation: none;
+         opacity: 1;
+         }
+         .navbar-collapse.collapsing {
+         opacity: 0;
+         transition: opacity 0.3s ease;
+         }
+         .navbar-collapse .navbar-nav {
+         text-align: center;
+         }
+         .navbar-collapse .navbar-nav .nav-item {
+         margin-bottom: 1rem;
+         }
+         .navbar-collapse .navbar-nav .nav-link {
+         font-size: 1.5rem;
+         font-weight: 500;
+         color: #fff !important;
+         }
+         .navbar-toggler {
+         z-index: 1001;
+         position: relative;
+         }
+         }
+         @media (max-width: 767.98px) {
+         .project .overlay {
+         opacity: .9;
+         background: #2a2a2a;
+         }
+         .project .text {
+         opacity: 1;
+         transform: translateY(0);
+         }
+         }
+      </style>
+   </head>
+   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+         <div class="container">
             <a class="navbar-brand" href="index.html">Ersin Elmas</a>
             <div class="navbar-right-controls">
-                <div class="language-switcher">
-                    <button onclick="setLanguage('tr')" class="lang-btn active" id="btn-tr">TR</button>
-                    <button onclick="setLanguage('en')" class="lang-btn" id="btn-en">EN</button>
-                </div>
-                <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="oi oi-menu"></span> Menu
-                </button>
+               <div class="language-switcher">
+                  <button onclick="setLanguage('tr')" class="lang-btn active" id="btn-tr">TR</button>
+                  <button onclick="setLanguage('en')" class="lang-btn" id="btn-en">EN</button>
+               </div>
+               <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="oi oi-menu"></span> Menu
+               </button>
             </div>
-    
             <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav nav ml-auto">
-                    <li class="nav-item"><a href="#home-section" class="nav-link"><span data-translate="nav_home" style="text-transform: none;"></span></a></li>
-                    <li class="nav-item"><a href="#about-section" class="nav-link"><span data-translate="nav_about" style="text-transform: none;"></span></a></li>
-                    <li class="nav-item"><a href="#resume-section" class="nav-link"><span data-translate="nav_resume" style="text-transform: none;"></span></a></li>
-                    <li class="nav-item"><a href="#services-section" class="nav-link"><span data-translate="nav_services" style="text-transform: none;"></span></a></li>
-                    <li class="nav-item"><a href="#projects-section" class="nav-link"><span data-translate="nav_projects" style="text-transform: none;"></span></a></li>
-                    <li class="nav-item"><a href="#blog-section" class="nav-link"><span data-translate="nav_blog" style="text-transform: none;"></span></a></li>
-                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span data-translate="nav_contact" style="text-transform: none;"></span></a></li>
-                </ul>
+               <ul class="navbar-nav nav ml-auto">
+                  <li class="nav-item"><a href="#home-section" class="nav-link"><span data-translate="nav_home" style="text-transform: none;"></span></a></li>
+                  <li class="nav-item"><a href="#about-section" class="nav-link"><span data-translate="nav_about" style="text-transform: none;"></span></a></li>
+                  <li class="nav-item"><a href="#resume-section" class="nav-link"><span data-translate="nav_resume" style="text-transform: none;"></span></a></li>
+                  <li class="nav-item"><a href="#services-section" class="nav-link"><span data-translate="nav_services" style="text-transform: none;"></span></a></li>
+                  <li class="nav-item"><a href="#projects-section" class="nav-link"><span data-translate="nav_projects" style="text-transform: none;"></span></a></li>
+                  <li class="nav-item"><a href="#blog-section" class="nav-link"><span data-translate="nav_blog" style="text-transform: none;"></span></a></li>
+                  <li class="nav-item"><a href="#contact-section" class="nav-link"><span data-translate="nav_contact" style="text-transform: none;"></span></a></li>
+               </ul>
             </div>
-        </div>
-    </nav>
-    
-    <section id="home-section" class="hero">
-        <div class="overlay"></div>
-        <div class="container">
+         </div>
+      </nav>
+      <section id="home-section" class="hero">
+         <div class="overlay"></div>
+         <div class="container">
             <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true" style="height: 100vh; min-height: 800px;">
-                <div class="col-md-12 ftco-animate text-center">
-                    <div class="text">
-                        <span class="subheading" data-translate="hero_subtitle"></span>
-                        <h1 class="mb-4 mt-3" data-translate="hero_title"></h1>
-                        <p class="mb-4" data-translate="hero_description" style="text-transform: none;"></p>
-                        <p><a href="#contact-section" class="btn btn-primary py-3 px-4" data-translate="hero_btn_contact" style="text-transform: none;"></a> 
-                           <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4" data-translate="hero_btn_projects" style="text-transform: none;"></a></p>
-                    </div>
-                </div>
+               <div class="col-md-12 ftco-animate text-center">
+                  <div class="text">
+                     <span class="subheading" data-translate="hero_subtitle"></span>
+                     <h1 class="mb-4 mt-3" data-translate="hero_title"></h1>
+                     <p class="mb-4" data-translate="hero_description" style="text-transform: none;"></p>
+                     <p><a href="#contact-section" class="btn btn-primary py-3 px-4" data-translate="hero_btn_contact" style="text-transform: none;"></a> 
+                        <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4" data-translate="hero_btn_projects" style="text-transform: none;"></a>
+                     </p>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <section class="ftco-about ftco-section ftco-no-pb" id="about-section">
-        <div class="container">
+         </div>
+      </section>
+      <section class="ftco-about ftco-section ftco-no-pb" id="about-section">
+         <div class="container">
             <div class="row d-flex">
-                <div class="col-md-12 col-lg-12 pl-lg-5 pb-5">
-                    <div class="row justify-content-start pb-3">
-                        <div class="col-md-12 heading-section ftco-animate">
-                            <h1 class="big" data-translate="about_big_title" style="text-transform: none;"></h1>
-                            <h2 class="mb-4" data-translate="about_title" style="text-transform: none;"></h2>
-                            <p data-translate="about_description" style="text-transform: none;"></p>
-                            <ul class="about-info mt-4 px-md-0 px-2">
-                                <li class="d-flex"><span data-translate="about_name" style="text-transform: none;"></span> <span>Ersin Elmas</span></li>
-                                <li class="d-flex"><span data-translate="about_email" style="text-transform: none;"></span> <span>ersinelmas17@gmail.com</span></li>
-                                <li class="d-flex"><span data-translate="about_phone" style="text-transform: none;"></span> <span>+90 543 306 3014</span></li>
-                                <li class="d-flex"><span data-translate="about_location" style="text-transform: none;"></span> <span data-translate="contact_location_text"></span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="counter-wrap ftco-animate d-flex mt-md-3">
-                        <div class="text">
-                            <p class="mb-4">
-                                <span class="number" data-number="10">0</span>
-                                <span data-translate="about_counter_text" style="text-transform: none;"></span>
-                            </p>
-                            <p><a href="CV-Ersin-Elmas.pdf" target="_blank" class="btn btn-primary py-3 px-3" data-translate="about_btn_cv" style="text-transform: none;"></a></p>
-                        </div>
-                    </div>
-                </div>
+               <div class="col-md-12 col-lg-12 pl-lg-5 pb-5">
+                  <div class="row justify-content-start pb-3">
+                     <div class="col-md-12 heading-section ftco-animate">
+                        <h1 class="big" data-translate="about_big_title" style="text-transform: none;"></h1>
+                        <h2 class="mb-4" data-translate="about_title" style="text-transform: none;"></h2>
+                        <p data-translate="about_description" style="text-transform: none;"></p>
+                        <ul class="about-info mt-4 px-md-0 px-2">
+                           <li class="d-flex"><span data-translate="about_name" style="text-transform: none;"></span> <span>Ersin Elmas</span></li>
+                           <li class="d-flex"><span data-translate="about_email" style="text-transform: none;"></span> <span>ersinelmas17@gmail.com</span></li>
+                           <li class="d-flex"><span data-translate="about_phone" style="text-transform: none;"></span> <span>+90 543 306 3014</span></li>
+                           <li class="d-flex"><span data-translate="about_location" style="text-transform: none;"></span> <span data-translate="contact_location_text"></span></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                     <div class="text">
+                        <p class="mb-4">
+                           <span class="number" data-number="10">0</span>
+                           <span data-translate="about_counter_text" style="text-transform: none;"></span>
+                        </p>
+                        <p><a href="CV-Ersin-Elmas.pdf" target="_blank" class="btn btn-primary py-3 px-3" data-translate="about_btn_cv" style="text-transform: none;"></a></p>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-        <div class="container">
+         </div>
+      </section>
+      <section class="ftco-section ftco-no-pb" id="resume-section">
+         <div class="container">
             <div class="row justify-content-center pb-5">
-                <div class="col-md-10 heading-section text-center ftco-animate">
-                    <h1 class="big big-2" data-translate="resume_big_title" style="text-transform: none;"></h1>
-                    <h2 class="mb-4" data-translate="resume_title" style="text-transform: none;"></h2>
-                    <p data-translate="resume_description" style="text-transform: none;"></p>
-                </div>
+               <div class="col-md-10 heading-section text-center ftco-animate">
+                  <h1 class="big big-2" data-translate="resume_big_title" style="text-transform: none;"></h1>
+                  <h2 class="mb-4" data-translate="resume_title" style="text-transform: none;"></h2>
+                  <p data-translate="resume_description" style="text-transform: none;"></p>
+               </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">07/2024 - 04/2025</span>
-                        <h2 data-translate="resume_job1_title" style="text-transform: none;"></h2>
-                        <span class="position" data-translate="resume_job1_company" style="text-transform: none;"></span>
-                        <p class="mt-4">
-                            <ul>
-                                <li data-translate="resume_job1_desc1" style="text-transform: none;"></li>
-                                <li data-translate="resume_job1_desc2" style="text-transform: none;"></li>
-                                <li data-translate="resume_job1_desc3" style="text-transform: none;"></li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">06/2022 - 08/2023</span>
-                        <h2 data-translate="resume_job2_title" style="text-transform: none;"></h2>
-                        <span class="position" data-translate="resume_job2_company" style="text-transform: none;"></span>
-                        <p class="mt-4">
-                            <ul>
-                                <li data-translate="resume_job2_desc1" style="text-transform: none;"></li>
-                                <li data-translate="resume_job2_desc2" style="text-transform: none;"></li>
-                                <li data-translate="resume_job2_desc3" style="text-transform: none;"></li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">08/2019 - 07/2023</span>
-                        <h2 data-translate="resume_edu1_degree" style="text-transform: none;"></h2>
-                        <span class="position" data-translate="resume_edu1_university" style="text-transform: none;"></span>
-                        <p class="mt-4" data-translate="resume_edu1_desc" style="text-transform: none;"></p>
-                    </div>
-                </div>
+               <div class="col-md-6">
+                  <div class="resume-wrap ftco-animate">
+                     <span class="date">07/2024 - 04/2025</span>
+                     <h2 data-translate="resume_job1_title" style="text-transform: none;"></h2>
+                     <span class="position" data-translate="resume_job1_company" style="text-transform: none;"></span>
+                     <p class="mt-4">
+                     <ul>
+                        <li data-translate="resume_job1_desc1" style="text-transform: none;"></li>
+                        <li data-translate="resume_job1_desc2" style="text-transform: none;"></li>
+                        <li data-translate="resume_job1_desc3" style="text-transform: none;"></li>
+                     </ul>
+                     </p>
+                  </div>
+                  <div class="resume-wrap ftco-animate">
+                     <span class="date">06/2022 - 08/2023</span>
+                     <h2 data-translate="resume_job2_title" style="text-transform: none;"></h2>
+                     <span class="position" data-translate="resume_job2_company" style="text-transform: none;"></span>
+                     <p class="mt-4">
+                     <ul>
+                        <li data-translate="resume_job2_desc1" style="text-transform: none;"></li>
+                        <li data-translate="resume_job2_desc2" style="text-transform: none;"></li>
+                        <li data-translate="resume_job2_desc3" style="text-transform: none;"></li>
+                     </ul>
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="resume-wrap ftco-animate">
+                     <span class="date">08/2019 - 07/2023</span>
+                     <h2 data-translate="resume_edu1_degree" style="text-transform: none;"></h2>
+                     <span class="position" data-translate="resume_edu1_university" style="text-transform: none;"></span>
+                     <p class="mt-4" data-translate="resume_edu1_desc" style="text-transform: none;"></p>
+                  </div>
+               </div>
             </div>
             <div class="row justify-content-center mt-5">
-                <div class="col-md-6 text-center ftco-animate">
-                    <p><a href="CV-Ersin-Elmas.pdf" target="_blank" class="btn btn-primary py-4 px-5" data-translate="about_btn_cv" style="text-transform: none;"></a></p>
-                </div>
+               <div class="col-md-6 text-center ftco-animate">
+                  <p><a href="CV-Ersin-Elmas.pdf" target="_blank" class="btn btn-primary py-4 px-5" data-translate="about_btn_cv" style="text-transform: none;"></a></p>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <section class="ftco-section" id="services-section">
-        <div class="container">
+         </div>
+      </section>
+      <section class="ftco-section" id="services-section">
+         <div class="container">
             <div class="row justify-content-center py-5 mt-5">
-                <div class="col-md-12 heading-section text-center ftco-animate">
-                    <h1 class="big big-2" data-translate="services_big_title" style="text-transform: none;"></h1>
-                    <h2 class="mb-4" data-translate="services_title" style="text-transform: none;"></h2>
-                    <p data-translate="services_description" style="text-transform: none;"></p>
-                </div>
+               <div class="col-md-12 heading-section text-center ftco-animate">
+                  <h1 class="big big-2" data-translate="services_big_title" style="text-transform: none;"></h1>
+                  <h2 class="mb-4" data-translate="services_title" style="text-transform: none;"></h2>
+                  <p data-translate="services_description" style="text-transform: none;"></p>
+               </div>
             </div>
             <div class="row">
-                <div class="col-md-4 text-center d-flex ftco-animate">
-                    <a class="services-1">
-                        <span class="icon"><i class="flaticon-analysis"></i></span>
-                        <div class="desc">
-                            <h3 class="mb-5" data-translate="service1_title" style="text-transform: none;"></h3>
-                            <p data-translate="service1_desc" style="text-transform: none;"></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 text-center d-flex ftco-animate">
-                    <a class="services-1">
-                        <span class="icon"><i class="flaticon-ideas"></i></span>
-                        <div class="desc">
-                            <h3 class="mb-5" data-translate="service2_title" style="text-transform: none;"></h3>
-                            <p data-translate="service2_desc" style="text-transform: none;"></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 text-center d-flex ftco-animate">
-                    <a class="services-1">
-                        <span class="icon"><i class="flaticon-flasks"></i></span>
-                        <div class="desc">
-                            <h3 class="mb-5" data-translate="service3_title" style="text-transform: none;"></h3>
-                            <p data-translate="service3_desc" style="text-transform: none;"></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 text-center d-flex ftco-animate">
-                    <a class="services-1">
-                        <span class="icon"><i class="icon-layers"></i></span>
-                        <div class="desc">
-                            <h3 class="mb-5" data-translate="service4_title" style="text-transform: none;"></h3>
-                            <p data-translate="service4_desc" style="text-transform: none;"></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 text-center d-flex ftco-animate">
-                    <a class="services-1">
-                        <span class="icon"><i class="icon-git"></i></span>
-                        <div class="desc">
-                            <h3 class="mb-5" data-translate="service5_title" style="text-transform: none;"></h3>
-                            <p data-translate="service5_desc" style="text-transform: none;"></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 text-center d-flex ftco-animate">
-                    <a class="services-1">
-                        <span class="icon"><i class="icon-people"></i></span>
-                        <div class="desc">
-                            <h3 class="mb-5" data-translate="service6_title" style="text-transform: none;"></h3>
-                            <p data-translate="service6_desc" style="text-transform: none;"></p>
-                        </div>
-                    </a>
-                </div>
+               <div class="col-md-4 text-center d-flex ftco-animate">
+                  <a class="services-1">
+                     <span class="icon"><i class="flaticon-analysis"></i></span>
+                     <div class="desc">
+                        <h3 class="mb-5" data-translate="service1_title" style="text-transform: none;"></h3>
+                        <p data-translate="service1_desc" style="text-transform: none;"></p>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 text-center d-flex ftco-animate">
+                  <a class="services-1">
+                     <span class="icon"><i class="flaticon-ideas"></i></span>
+                     <div class="desc">
+                        <h3 class="mb-5" data-translate="service2_title" style="text-transform: none;"></h3>
+                        <p data-translate="service2_desc" style="text-transform: none;"></p>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 text-center d-flex ftco-animate">
+                  <a class="services-1">
+                     <span class="icon"><i class="flaticon-flasks"></i></span>
+                     <div class="desc">
+                        <h3 class="mb-5" data-translate="service3_title" style="text-transform: none;"></h3>
+                        <p data-translate="service3_desc" style="text-transform: none;"></p>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 text-center d-flex ftco-animate">
+                  <a class="services-1">
+                     <span class="icon"><i class="icon-layers"></i></span>
+                     <div class="desc">
+                        <h3 class="mb-5" data-translate="service4_title" style="text-transform: none;"></h3>
+                        <p data-translate="service4_desc" style="text-transform: none;"></p>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 text-center d-flex ftco-animate">
+                  <a class="services-1">
+                     <span class="icon"><i class="icon-git"></i></span>
+                     <div class="desc">
+                        <h3 class="mb-5" data-translate="service5_title" style="text-transform: none;"></h3>
+                        <p data-translate="service5_desc" style="text-transform: none;"></p>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 text-center d-flex ftco-animate">
+                  <a class="services-1">
+                     <span class="icon"><i class="icon-people"></i></span>
+                     <div class="desc">
+                        <h3 class="mb-5" data-translate="service6_title" style="text-transform: none;"></h3>
+                        <p data-translate="service6_desc" style="text-transform: none;"></p>
+                     </div>
+                  </a>
+               </div>
             </div>
-        </div>
-    </section>
-    
-    <section class="ftco-section" id="skills-section">
-        <div class="container">
+         </div>
+      </section>
+      <section class="ftco-section" id="skills-section">
+         <div class="container">
             <div class="row justify-content-center pb-5">
-                <div class="col-md-12 heading-section text-center ftco-animate">
-                    <h1 class="big big-2" data-translate="skills_big_title" style="text-transform: none;"></h1>
-                    <h2 class="mb-4" data-translate="skills_title" style="text-transform: none;"></h2>
-                    <p data-translate="skills_description" style="text-transform: none;"></p>
-                </div>
+               <div class="col-md-12 heading-section text-center ftco-animate">
+                  <h1 class="big big-2" data-translate="skills_big_title" style="text-transform: none;"></h1>
+                  <h2 class="mb-4" data-translate="skills_title" style="text-transform: none;"></h2>
+                  <p data-translate="skills_description" style="text-transform: none;"></p>
+               </div>
             </div>
             <div class="row">
-                <div class="col-md-6 animate-box">
-                    <div class="progress-wrap ftco-animate">
-                        <h3 data-translate="skill1_name" style="text-transform: none;"></h3>
-                        <div class="progress"><div class="progress-bar color-1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"><span>95%</span></div></div>
-                    </div>
-                </div>
-                <div class="col-md-6 animate-box">
-                    <div class="progress-wrap ftco-animate">
-                        <h3 data-translate="skill2_name" style="text-transform: none;"></h3>
-                        <div class="progress"><div class="progress-bar color-2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div></div>
-                    </div>
-                </div>
-                <div class="col-md-6 animate-box">
-                    <div class="progress-wrap ftco-animate">
-                        <h3 data-translate="skill3_name" style="text-transform: none;"></h3>
-                        <div class="progress"><div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"><span>95%</span></div></div>
-                    </div>
-                </div>
-                <div class="col-md-6 animate-box">
-                    <div class="progress-wrap ftco-animate">
-                        <h3 data-translate="skill4_name" style="text-transform: none;"></h3>
-                        <div class="progress"><div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div></div>
-                    </div>
-                </div>
-                <div class="col-md-6 animate-box">
-                    <div class="progress-wrap ftco-animate">
-                        <h3 data-translate="skill5_name" style="text-transform: none;"></h3>
-                        <div class="progress"><div class="progress-bar color-5" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"><span>85%</span></div></div>
-                    </div>
-                </div>
-                <div class="col-md-6 animate-box">
-                    <div class="progress-wrap ftco-animate">
-                        <h3 data-translate="skill6_name" style="text-transform: none;"></h3>
-                        <div class="progress"><div class="progress-bar color-6" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"><span>95%</span></div></div>
-                    </div>
-                </div>
+               <div class="col-md-6 animate-box">
+                  <div class="progress-wrap ftco-animate">
+                     <h3 data-translate="skill1_name" style="text-transform: none;"></h3>
+                     <div class="progress">
+                        <div class="progress-bar color-1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"><span>95%</span></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 animate-box">
+                  <div class="progress-wrap ftco-animate">
+                     <h3 data-translate="skill2_name" style="text-transform: none;"></h3>
+                     <div class="progress">
+                        <div class="progress-bar color-2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 animate-box">
+                  <div class="progress-wrap ftco-animate">
+                     <h3 data-translate="skill3_name" style="text-transform: none;"></h3>
+                     <div class="progress">
+                        <div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"><span>95%</span></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 animate-box">
+                  <div class="progress-wrap ftco-animate">
+                     <h3 data-translate="skill4_name" style="text-transform: none;"></h3>
+                     <div class="progress">
+                        <div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 animate-box">
+                  <div class="progress-wrap ftco-animate">
+                     <h3 data-translate="skill5_name" style="text-transform: none;"></h3>
+                     <div class="progress">
+                        <div class="progress-bar color-5" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"><span>85%</span></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 animate-box">
+                  <div class="progress-wrap ftco-animate">
+                     <h3 data-translate="skill6_name" style="text-transform: none;"></h3>
+                     <div class="progress">
+                        <div class="progress-bar color-6" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"><span>95%</span></div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <section class="ftco-section ftco-project" id="projects-section">
-        <div class="container">
+         </div>
+      </section>
+      <section class="ftco-section ftco-project" id="projects-section">
+         <div class="container">
             <div class="row justify-content-center pb-5">
-                <div class="col-md-12 heading-section text-center ftco-animate">
-                    <h1 class="big big-2" data-translate="projects_big_title" style="text-transform: none;"></h1>
-                    <h2 class="mb-4" data-translate="projects_title" style="text-transform: none;"></h2>
-                    <p data-translate="projects_description" style="text-transform: none;"></p>
-                </div>
+               <div class="col-md-12 heading-section text-center ftco-animate">
+                  <h1 class="big big-2" data-translate="projects_big_title" style="text-transform: none;"></h1>
+                  <h2 class="mb-4" data-translate="projects_title" style="text-transform: none;"></h2>
+                  <p data-translate="projects_description" style="text-transform: none;"></p>
+               </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="project img ftco-animate" style="background-image: url(images/project-1.jpg);">
-                        <a href="https://github.com/ersinelmas/RisenCore" target="_blank" class="d-flex justify-content-center align-items-center w-100 h-100">
-                            <div class="overlay"></div>
-                            <div class="text text-center p-4">
-                                <h3 data-translate="project1_title" style="text-transform: none; color: white;"></h3>
-                                <span data-translate="project1_tech" style="text-transform: none;"></span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="project img ftco-animate" style="background-image: url(images/project-2.jpg);">
-                        <a href="https://github.com/ersinelmas/Turkcell-CRM" target="_blank" class="d-flex justify-content-center align-items-center w-100 h-100">
-                            <div class="overlay"></div>
-                            <div class="text text-center p-4">
-                                <h3 data-translate="project2_title" style="text-transform: none; color: white;"></h3>
-                                <span data-translate="project2_tech" style="text-transform: none;"></span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+               <div class="col-md-6">
+                  <div class="project img ftco-animate" style="background-image: url(images/project-1.jpg);">
+                     <a href="https://github.com/ersinelmas/RisenCore" target="_blank" class="d-flex justify-content-center align-items-center w-100 h-100">
+                        <div class="overlay"></div>
+                        <div class="text text-center p-4">
+                           <h3 data-translate="project1_title" style="text-transform: none; color: white;"></h3>
+                           <span data-translate="project1_tech" style="text-transform: none;"></span>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="project img ftco-animate" style="background-image: url(images/project-2.jpg);">
+                     <a href="https://github.com/ersinelmas/Turkcell-CRM" target="_blank" class="d-flex justify-content-center align-items-center w-100 h-100">
+                        <div class="overlay"></div>
+                        <div class="text text-center p-4">
+                           <h3 data-translate="project2_title" style="text-transform: none; color: white;"></h3>
+                           <span data-translate="project2_tech" style="text-transform: none;"></span>
+                        </div>
+                     </a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <section class="ftco-section" id="blog-section">
-        <div class="container">
+         </div>
+      </section>
+      <section class="ftco-section" id="blog-section">
+         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
-                <div class="col-md-7 heading-section text-center ftco-animate">
-                    <h1 class="big big-2" data-translate="blog_big_title" style="text-transform: none;"></h1>
-                    <h2 class="mb-4" data-translate="blog_title" style="text-transform: none;"></h2>
-                    <p data-translate="blog_description" style="text-transform: none;"></p>
-                </div>
+               <div class="col-md-7 heading-section text-center ftco-animate">
+                  <h1 class="big big-2" data-translate="blog_big_title" style="text-transform: none;"></h1>
+                  <h2 class="mb-4" data-translate="blog_title" style="text-transform: none;"></h2>
+                  <p data-translate="blog_description" style="text-transform: none;"></p>
+               </div>
             </div>
             <div class="row d-flex">
-                <div class="col-md-6 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" class="block-20" style="background-image: url('images/image_1.jpg');"></a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center mb-3 meta"><p class="mb-0"><a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" class="mr-2" data-translate="blog_read_more"></a></p></div>
-                            <h3 class="heading"><a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" data-translate="blog1_title" style="text-transform: none;"></a></h3>
-                            <p data-translate="blog1_desc" style="text-transform: none;"></p>
+               <div class="col-md-6 d-flex ftco-animate">
+                  <div class="blog-entry justify-content-end">
+                     <a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" class="block-20" style="background-image: url('images/image_1.jpg');"></a>
+                     <div class="text mt-3 float-right d-block">
+                        <div class="d-flex align-items-center mb-3 meta">
+                           <p class="mb-0"><a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" class="mr-2" data-translate="blog_read_more"></a></p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" class="block-20" style="background-image: url('images/image_2.jpg');"></a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center mb-3 meta"><p class="mb-0"><a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" class="mr-2" data-translate="blog_read_more"></a></p></div>
-                            <h3 class="heading"><a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" data-translate="blog2_title" style="text-transform: none;"></a></h3>
-                            <p data-translate="blog2_desc" style="text-transform: none;"></p>
+                        <h3 class="heading"><a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" data-translate="blog1_title" style="text-transform: none;"></a></h3>
+                        <p data-translate="blog1_desc" style="text-transform: none;"></p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 d-flex ftco-animate">
+                  <div class="blog-entry justify-content-end">
+                     <a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" class="block-20" style="background-image: url('images/image_2.jpg');"></a>
+                     <div class="text mt-3 float-right d-block">
+                        <div class="d-flex align-items-center mb-3 meta">
+                           <p class="mb-0"><a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" class="mr-2" data-translate="blog_read_more"></a></p>
                         </div>
-                    </div>
-                </div>
+                        <h3 class="heading"><a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" data-translate="blog2_title" style="text-transform: none;"></a></h3>
+                        <p data-translate="blog2_desc" style="text-transform: none;"></p>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-        <div class="container">
+         </div>
+      </section>
+      <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-7 heading-section text-center ftco-animate">
-                    <h1 class="big big-2" data-translate="contact_big_title" style="text-transform: none;"></h1>
-                    <h2 class="mb-4" data-translate="contact_title" style="text-transform: none;"></h2>
-                    <p data-translate="contact_description" style="text-transform: none;"></p>
-                </div>
+               <div class="col-md-7 heading-section text-center ftco-animate">
+                  <h1 class="big big-2" data-translate="contact_big_title" style="text-transform: none;"></h1>
+                  <h2 class="mb-4" data-translate="contact_title" style="text-transform: none;"></h2>
+                  <p data-translate="contact_description" style="text-transform: none;"></p>
+               </div>
             </div>
             <div class="row d-flex contact-info mb-5">
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center"><span class="icon-map-signs"></span></div>
-                        <h3 class="mb-4" data-translate="contact1_title" style="text-transform: none;"></h3>
-                        <p data-translate="contact_location_text"></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center"><span class="icon-phone2"></span></div>
-                        <h3 class="mb-4" data-translate="contact2_title" style="text-transform: none;"></h3>
-                        <p><a href="tel://+905433063014">+90 543 306 3014</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center"><span class="icon-paper-plane"></span></div>
-                        <h3 class="mb-4" data-translate="contact3_title" style="text-transform: none;"></h3>
-                        <p><a href="mailto:ersinelmas17@gmail.com">ersinelmas17@gmail.com</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center"><span class="icon-globe"></span></div>
-                        <h3 class="mb-4" data-translate="contact4_title" style="text-transform: none;"></h3>
-                        <p><a href="https://linkedin.com/in/ersin-elmas" target="_blank">LinkedIn</a> <br> <a href="https://github.com/ersinelmas" target="_blank">GitHub</a></p>
-                    </div>
-                </div>
+               <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                  <div class="align-self-stretch box p-4 text-center">
+                     <div class="icon d-flex align-items-center justify-content-center"><span class="icon-map-signs"></span></div>
+                     <h3 class="mb-4" data-translate="contact1_title" style="text-transform: none;"></h3>
+                     <p data-translate="contact_location_text"></p>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                  <div class="align-self-stretch box p-4 text-center">
+                     <div class="icon d-flex align-items-center justify-content-center"><span class="icon-phone2"></span></div>
+                     <h3 class="mb-4" data-translate="contact2_title" style="text-transform: none;"></h3>
+                     <p><a href="tel://+905433063014">+90 543 306 3014</a></p>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                  <div class="align-self-stretch box p-4 text-center">
+                     <div class="icon d-flex align-items-center justify-content-center"><span class="icon-paper-plane"></span></div>
+                     <h3 class="mb-4" data-translate="contact3_title" style="text-transform: none;"></h3>
+                     <p><a href="mailto:ersinelmas17@gmail.com">ersinelmas17@gmail.com</a></p>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                  <div class="align-self-stretch box p-4 text-center">
+                     <div class="icon d-flex align-items-center justify-content-center"><span class="icon-globe"></span></div>
+                     <h3 class="mb-4" data-translate="contact4_title" style="text-transform: none;"></h3>
+                     <p><a href="https://linkedin.com/in/ersin-elmas" target="_blank">LinkedIn</a> <br> <a href="https://github.com/ersinelmas" target="_blank">GitHub</a></p>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <footer class="ftco-footer ftco-section">
-        <div class="container">
+         </div>
+      </section>
+      <footer class="ftco-footer ftco-section">
+         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <p data-translate-children="footer_copyright"></p>
-                </div>
+               <div class="col-md-12 text-center">
+                  <p data-translate-children="footer_copyright"></p>
+               </div>
             </div>
-        </div>
-    </footer>
-    
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
-    <script src="js/main.js"></script>
-    
-    <script>
-        const translations = {};
-    
-        async function loadTranslations(lang) {
-            try {
-                const response = await fetch(`lang/${lang}.json?v=${new Date().getTime()}`); // Cache busting
-                if (!response.ok) {
-                    throw new Error(`Could not load ${lang}.json`);
-                }
-                translations[lang] = await response.json();
-            } catch (error) {
-                console.error("Translation loading error:", error);
-            }
-        }
-    
-        function applyTranslations(lang) {
-            const langData = translations[lang];
-            if (!langData) return;
-    
-            document.querySelectorAll('[data-translate]').forEach(element => {
-                const key = element.getAttribute('data-translate');
-                if (langData[key]) {
-                    element.innerHTML = langData[key];
-                }
-            });
-    
-            document.querySelectorAll('[data-translate-children]').forEach(element => {
-                const key = element.getAttribute('data-translate-children');
-                const translation = langData[key];
-                if (translation) {
-                    const tempDiv = document.createElement('div');
-                    tempDiv.innerHTML = translation;
-                    
-                    const scriptTag = element.querySelector('script');
-                    const linkTag = element.querySelector('a');
-
-                    element.innerHTML = tempDiv.innerHTML;
-
-                    // Re-append script tag if it exists to ensure it runs
-                    if (scriptTag) element.appendChild(scriptTag);
-                }
-            });
-    
-            document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
-            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-            localStorage.setItem('language', lang);
-        }
-    
-        async function setLanguage(lang) {
-            if (!translations[lang]) {
-                await loadTranslations(lang);
-            }
-            applyTranslations(lang);
-        }
-    
-        document.addEventListener('DOMContentLoaded', () => {
-            const savedLang = localStorage.getItem('language') || 'tr';
-            setLanguage(savedLang);
-        });
-    </script>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        
-        document.addEventListener('click', function(event) {
-            var menu = document.getElementById('ftco-nav');
-            var toggler = document.querySelector('.navbar-toggler');
-
-            if (!menu.contains(event.target) && !toggler.contains(event.target) && menu.classList.contains('show')) {
-                toggler.click();
-            }
-        });
-        var navLinks = document.querySelectorAll('#ftco-nav .nav-link');
-        navLinks.forEach(function(link) {
-            link.addEventListener('click', function() {
-                var menu = document.getElementById('ftco-nav');
-                if (menu.classList.contains('show')) {
-                    document.querySelector('.navbar-toggler').click();
-                }
-            });
-        });
-
-    });
-</script>
-</body>
+         </div>
+      </footer>
+      <div id="ftco-loader" class="show fullscreen">
+         <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+         </svg>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/scrollax.min.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+         const translations = {};
+         
+         async function loadTranslations(lang) {
+             try {
+                 const response = await fetch(`lang/${lang}.json?v=${new Date().getTime()}`); // Cache busting
+                 if (!response.ok) {
+                     throw new Error(`Could not load ${lang}.json`);
+                 }
+                 translations[lang] = await response.json();
+             } catch (error) {
+                 console.error("Translation loading error:", error);
+             }
+         }
+         
+         function applyTranslations(lang) {
+             const langData = translations[lang];
+             if (!langData) return;
+         
+             document.querySelectorAll('[data-translate]').forEach(element => {
+                 const key = element.getAttribute('data-translate');
+                 if (langData[key]) {
+                     element.innerHTML = langData[key];
+                 }
+             });
+         
+             document.querySelectorAll('[data-translate-children]').forEach(element => {
+                 const key = element.getAttribute('data-translate-children');
+                 const translation = langData[key];
+                 if (translation) {
+                     const tempDiv = document.createElement('div');
+                     tempDiv.innerHTML = translation;
+                     
+                     const scriptTag = element.querySelector('script');
+                     const linkTag = element.querySelector('a');
+         
+                     element.innerHTML = tempDiv.innerHTML;
+         
+                     // Re-append script tag if it exists to ensure it runs
+                     if (scriptTag) element.appendChild(scriptTag);
+                 }
+             });
+         
+             document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+             document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+             localStorage.setItem('language', lang);
+         }
+         
+         async function setLanguage(lang) {
+             if (!translations[lang]) {
+                 await loadTranslations(lang);
+             }
+             applyTranslations(lang);
+         }
+         
+         document.addEventListener('DOMContentLoaded', () => {
+             const savedLang = localStorage.getItem('language') || 'tr';
+             setLanguage(savedLang);
+         });
+      </script>
+      <script>
+         document.addEventListener('DOMContentLoaded', function() {
+             
+             document.addEventListener('click', function(event) {
+                 var menu = document.getElementById('ftco-nav');
+                 var toggler = document.querySelector('.navbar-toggler');
+         
+                 if (!menu.contains(event.target) && !toggler.contains(event.target) && menu.classList.contains('show')) {
+                     toggler.click();
+                 }
+             });
+             var navLinks = document.querySelectorAll('#ftco-nav .nav-link');
+             navLinks.forEach(function(link) {
+                 link.addEventListener('click', function() {
+                     var menu = document.getElementById('ftco-nav');
+                     if (menu.classList.contains('show')) {
+                         document.querySelector('.navbar-toggler').click();
+                     }
+                 });
+             });
+             var toggler = document.querySelector('.navbar-toggler');
+             
+             toggler.addEventListener('click', function() {
+                 document.body.classList.toggle('mobile-menu-open');
+             });
+         
+             var menuLinks = document.querySelectorAll('#ftco-nav .nav-link');
+             menuLinks.forEach(function(link) {
+                 link.addEventListener('click', function() {
+                     if (document.body.classList.contains('mobile-menu-open')) {
+                         document.body.classList.remove('mobile-menu-open');
+                     }
+                 });
+             });
+         });
+      </script>
+   </body>
 </html>
