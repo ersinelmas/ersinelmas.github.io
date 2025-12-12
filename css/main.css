@@ -453,6 +453,10 @@ button:focus-visible {
 }
 
 @media (max-width: 640px) {
+  .site-header {
+    --header-height: 96px;
+  }
+
   .navbar {
     gap: 8px;
   }
