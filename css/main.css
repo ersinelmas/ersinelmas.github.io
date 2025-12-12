@@ -76,6 +76,7 @@ button:focus-visible {
 }
 
 .site-header {
+  --header-height: 72px;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -92,7 +93,8 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  min-height: var(--header-height);
+  padding: 8px 0;
 }
 
 .brand {
@@ -412,18 +414,23 @@ button:focus-visible {
 @media (max-width: 900px) {
   .nav-links {
     position: fixed;
-    inset: 72px 0 auto;
+    inset: var(--header-height) 0 auto;
     background: var(--bg);
     flex-direction: column;
     padding: 18px var(--gutter) 28px;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid transparent;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-    transform: translateY(-110%);
-    transition: transform 0.25s ease;
+    transform: translateY(-130%);
+    transition: transform 0.25s ease, opacity 0.2s ease;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .nav-links.open {
     transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    border-bottom-color: var(--border);
   }
 
   .menu-toggle {
@@ -432,14 +439,27 @@ button:focus-visible {
 }
 
 @media (max-width: 640px) {
+  .site-header {
+    --header-height: 96px;
+  }
+
   .navbar {
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
+  }
+
+  .brand {
+    margin-right: auto;
   }
 
   .controls {
     width: 100%;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .theme-btn {
+    margin-left: auto;
   }
 
   .section {
