@@ -96,16 +96,11 @@ button:focus-visible {
 }
 
 .brand {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  align-items: center;
   font-weight: 700;
   letter-spacing: 0.04em;
-}
-
-.brand span:last-child {
-  color: var(--muted);
-  font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .nav-links {
@@ -121,6 +116,7 @@ button:focus-visible {
   font-weight: 600;
   letter-spacing: 0.01em;
   transition: color 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
 }
 
 .nav-links a:hover,
