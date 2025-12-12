@@ -15,9 +15,9 @@
 }
 
 :root[data-theme='light'] {
-  --bg: #f5f7fb;
-  --surface: #ffffff;
-  --muted-surface: #f0f3fa;
+  --bg: #ffffff;
+  --surface: #f0f3fa;
+  --muted-surface: #f5f7fb;
   --text: #0f141c;
   --muted: #4b5565;
   --accent: #2563eb;
