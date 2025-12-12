@@ -76,6 +76,7 @@ button:focus-visible {
 }
 
 .site-header {
+  --header-height: 72px;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -92,20 +93,21 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  min-height: var(--header-height);
+  gap: 12px;
+  padding: 10px 0;
 }
 
 .brand {
-  display: flex;
-  flex-direction: column;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px;
+  border-radius: 12px;
 }
 
-.brand span:last-child {
-  color: var(--muted);
-  font-weight: 500;
-  font-size: 0.9rem;
+.brand img {
+  width: 32px;
+  height: 32px;
 }
 
 .nav-links {
@@ -121,6 +123,7 @@ button:focus-visible {
   font-weight: 600;
   letter-spacing: 0.01em;
   transition: color 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
 }
 
 .nav-links a:hover,
@@ -132,7 +135,7 @@ button:focus-visible {
 .controls {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .toggle-btn {
@@ -161,6 +164,12 @@ button:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .menu-toggle {
@@ -416,18 +425,26 @@ button:focus-visible {
 @media (max-width: 900px) {
   .nav-links {
     position: fixed;
-    inset: 72px 0 auto;
+    inset: var(--header-height) 0 auto;
     background: var(--bg);
     flex-direction: column;
     padding: 18px var(--gutter) 28px;
-    border-bottom: 1px solid var(--border);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-    transform: translateY(-110%);
-    transition: transform 0.25s ease;
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
+    transform: translateY(-120%);
+    transition: transform 0.25s ease, opacity 0.2s ease, visibility 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   .nav-links.open {
     transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    border-bottom-color: var(--border);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
   }
 
   .menu-toggle {
@@ -437,13 +454,25 @@ button:focus-visible {
 
 @media (max-width: 640px) {
   .navbar {
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
+  }
+
+  .header-actions {
+    margin-left: auto;
+    gap: 8px;
   }
 
   .controls {
-    width: 100%;
-    justify-content: space-between;
+    gap: 6px;
+  }
+
+  .toggle-btn {
+    padding: 8px 10px;
+  }
+
+  .theme-btn,
+  .menu-toggle {
+    padding: 8px 10px;
   }
 
   .section {
