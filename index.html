@@ -1,572 +1,182 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <title>Ersin Elmas | Yazılım Geliştirici</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-      <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-      <link rel="stylesheet" href="css/animate.css">
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/owl.theme.default.min.css">
-      <link rel="stylesheet" href="css/magnific-popup.css">
-      <link rel="stylesheet" href="css/aos.css">
-      <link rel="stylesheet" href="css/ionicons.min.css">
-      <link rel="stylesheet" href="css/flaticon.css">
-      <link rel="stylesheet" href="css/icomoon.css">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="icon" type="image/x-icon" href="favicon.ico">
-      <style>
-         [data-translate], [data-translate-children] {
-         text-transform: none !important;
-         }
-         body.mobile-menu-open {
-         overflow: hidden;
-         }
-         .ftco-navbar-light.scrolled {
-         position: fixed;
-         top: 0;
-         left: 0;
-         right: 0;
-         background: #000000 !important;
-         z-index: 999;
-         }
-         @media (max-width: 991.98px) {
-         .ftco_navbar {
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100%;
-         background: transparent;
-         z-index: 999;
-         }
-         .ftco_navbar.scrolled {
-         background: #000000 !important;
-         }
-         .ftco_navbar .container {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         width: 100%;
-         }
-         .navbar-right-controls {
-         display: flex;
-         align-items: center;
-         }
-         .language-switcher {
-         margin-right: 15px;
-         }
-         .navbar-collapse.collapse.show {
-         display: flex !important;
-         justify-content: center;
-         align-items: center;
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100vw;
-         height: 100vh;
-         background: rgba(0, 0, 0, 0.98);
-         z-index: 1000;
-         transform: none !important;
-         transition: opacity 0.3s ease;
-         animation: none;
-         opacity: 1;
-         }
-         .navbar-collapse.collapsing {
-         opacity: 0;
-         transition: opacity 0.3s ease;
-         }
-         .navbar-collapse .navbar-nav {
-         text-align: center;
-         }
-         .navbar-collapse .navbar-nav .nav-item {
-         margin-bottom: 1rem;
-         }
-         .navbar-collapse .navbar-nav .nav-link {
-         font-size: 1.5rem;
-         font-weight: 500;
-         color: #fff !important;
-         }
-         .navbar-toggler {
-         z-index: 1001;
-         position: relative;
-         }
-         }
-         @media (max-width: 767.98px) {
-         .project .overlay {
-         opacity: .9;
-         background: #2a2a2a;
-         }
-         .project .text {
-         opacity: 1;
-         transform: translateY(0);
-         }
-         }
-      </style>
-   </head>
-   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-         <div class="container">
-            <a class="navbar-brand" href="index.html">Ersin Elmas</a>
-            <div class="navbar-right-controls">
-               <div class="language-switcher">
-                  <button class="lang-btn active" id="btn-tr">TR</button>
-                  <button class="lang-btn" id="btn-en">EN</button>
-               </div>
-               <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="oi oi-menu"></span> Menu
-               </button>
-            </div>
-            <div class="collapse navbar-collapse" id="ftco-nav">
-               <ul class="navbar-nav nav ml-auto">
-                  <li class="nav-item"><a href="#home-section" class="nav-link"><span data-translate="nav_home"></span></a></li>
-                  <li class="nav-item"><a href="#about-section" class="nav-link"><span data-translate="nav_about"></span></a></li>
-                  <li class="nav-item"><a href="#resume-section" class="nav-link"><span data-translate="nav_resume"></span></a></li>
-                  <li class="nav-item"><a href="#services-section" class="nav-link"><span data-translate="nav_services"></span></a></li>
-                  <li class="nav-item"><a href="#projects-section" class="nav-link"><span data-translate="nav_projects"></span></a></li>
-                  <li class="nav-item"><a href="#blog-section" class="nav-link"><span data-translate="nav_blog"></span></a></li>
-                  <li class="nav-item"><a href="#contact-section" class="nav-link"><span data-translate="nav_contact"></span></a></li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <section id="home-section" class="hero">
-         <div class="overlay"></div>
-         <div class="container">
-            <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true" style="height: 100vh; min-height: 800px;">
-               <div class="col-md-12 ftco-animate text-center">
-                  <div class="text">
-                     <span class="subheading" data-translate="hero_subtitle"></span>
-                     <h1 class="mb-4 mt-3" data-translate="hero_title"></h1>
-                     <p class="mb-4" data-translate="hero_description"></p>
-                     <p><a href="#contact-section" class="btn btn-primary py-3 px-4" data-translate="hero_btn_contact"></a> 
-                        <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4" data-translate="hero_btn_projects"></a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="ftco-about ftco-section ftco-no-pb" id="about-section">
-         <div class="container">
-            <div class="row d-flex">
-               <div class="col-md-12 col-lg-12 pl-lg-5 pb-5">
-                  <div class="row justify-content-start pb-3">
-                     <div class="col-md-12 heading-section ftco-animate">
-                        <h1 class="big" data-translate="about_big_title"></h1>
-                        <h2 class="mb-4" data-translate="about_title"></h2>
-                        <p data-translate="about_description"></p>
-                        <ul class="about-info mt-4 px-md-0 px-2">
-                           <li class="d-flex"><span data-translate="about_name"></span> <span>Ersin Elmas</span></li>
-                           <li class="d-flex"><span data-translate="about_email"></span> <span>ersinelmas17@gmail.com</span></li>
-                           <li class="d-flex"><span data-translate="about_phone"></span> <span>+90 543 306 3014</span></li>
-                           <li class="d-flex"><span data-translate="about_location"></span> <span data-translate="contact_location_text"></span></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="counter-wrap ftco-animate d-flex mt-md-3">
-                     <div class="text">
-                        <p class="mb-4">
-                           <span class="number" data-number="10">0</span>
-                           <span data-translate="about_counter_text"></span>
-                        </p>
-                        <p><a href="CV-Ersin-Elmas.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-3" data-translate="about_btn_cv"></a></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="ftco-section ftco-no-pb" id="resume-section">
-         <div class="container">
-            <div class="row justify-content-center pb-5">
-               <div class="col-md-10 heading-section text-center ftco-animate">
-                  <h1 class="big big-2" data-translate="resume_big_title"></h1>
-                  <h2 class="mb-4" data-translate="resume_title"></h2>
-                  <p data-translate="resume_description"></p>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-6">
-                  <div class="resume-wrap ftco-animate">
-                     <span class="date">07/2024 - 04/2025</span>
-                     <h2 data-translate="resume_job1_title"></h2>
-                     <span class="position" data-translate="resume_job1_company"></span>
-                     <p class="mt-4">
-                     <ul>
-                        <li data-translate="resume_job1_desc1"></li>
-                        <li data-translate="resume_job1_desc2"></li>
-                        <li data-translate="resume_job1_desc3"></li>
-                     </ul>
-                     </p>
-                  </div>
-                  <div class="resume-wrap ftco-animate">
-                     <span class="date">06/2022 - 08/2023</span>
-                     <h2 data-translate="resume_job2_title"></h2>
-                     <span class="position" data-translate="resume_job2_company"></span>
-                     <p class="mt-4">
-                     <ul>
-                        <li data-translate="resume_job2_desc1"></li>
-                        <li data-translate="resume_job2_desc2"></li>
-                        <li data-translate="resume_job2_desc3"></li>
-                     </ul>
-                     </p>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="resume-wrap ftco-animate">
-                     <span class="date">08/2019 - 07/2023</span>
-                     <h2 data-translate="resume_edu1_degree"></h2>
-                     <span class="position" data-translate="resume_edu1_university"></span>
-                     <p class="mt-4" data-translate="resume_edu1_desc"></p>
-                  </div>
-               </div>
-            </div>
-            <div class="row justify-content-center mt-5">
-               <div class="col-md-6 text-center ftco-animate">
-                  <p><a href="CV-Ersin-Elmas.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-4 px-5" data-translate="about_btn_cv"></a></p>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="ftco-section" id="services-section">
-         <div class="container">
-            <div class="row justify-content-center py-5 mt-5">
-               <div class="col-md-12 heading-section text-center ftco-animate">
-                  <h1 class="big big-2" data-translate="services_big_title"></h1>
-                  <h2 class="mb-4" data-translate="services_title"></h2>
-                  <p data-translate="services_description"></p>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-4 text-center d-flex ftco-animate">
-                  <a class="services-1">
-                     <span class="icon"><i class="flaticon-analysis"></i></span>
-                     <div class="desc">
-                        <h3 class="mb-5" data-translate="service1_title"></h3>
-                        <p data-translate="service1_desc"></p>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 text-center d-flex ftco-animate">
-                  <a class="services-1">
-                     <span class="icon"><i class="flaticon-ideas"></i></span>
-                     <div class="desc">
-                        <h3 class="mb-5" data-translate="service2_title"></h3>
-                        <p data-translate="service2_desc"></p>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 text-center d-flex ftco-animate">
-                  <a class="services-1">
-                     <span class="icon"><i class="flaticon-flasks"></i></span>
-                     <div class="desc">
-                        <h3 class="mb-5" data-translate="service3_title"></h3>
-                        <p data-translate="service3_desc"></p>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 text-center d-flex ftco-animate">
-                  <a class="services-1">
-                     <span class="icon"><i class="icon-layers"></i></span>
-                     <div class="desc">
-                        <h3 class="mb-5" data-translate="service4_title"></h3>
-                        <p data-translate="service4_desc"></p>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 text-center d-flex ftco-animate">
-                  <a class="services-1">
-                     <span class="icon"><i class="icon-git"></i></span>
-                     <div class="desc">
-                        <h3 class="mb-5" data-translate="service5_title"></h3>
-                        <p data-translate="service5_desc"></p>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 text-center d-flex ftco-animate">
-                  <a class="services-1">
-                     <span class="icon"><i class="icon-people"></i></span>
-                     <div class="desc">
-                        <h3 class="mb-5" data-translate="service6_title"></h3>
-                        <p data-translate="service6_desc"></p>
-                     </div>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="ftco-section" id="skills-section">
-         <div class="container">
-            <div class="row justify-content-center pb-5">
-               <div class="col-md-12 heading-section text-center ftco-animate">
-                  <h1 class="big big-2" data-translate="skills_big_title"></h1>
-                  <h2 class="mb-4" data-translate="skills_title"></h2>
-                  <p data-translate="skills_description"></p>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                     <h3 data-translate="skill1_name"></h3>
-                     <div class="progress">
-                        <div class="progress-bar color-1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                     <h3 data-translate="skill2_name"></h3>
-                     <div class="progress">
-                        <div class="progress-bar color-2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:75%"><span>75%</span></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                     <h3 data-translate="skill3_name"></h3>
-                     <div class="progress">
-                        <div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:85%"><span>85%</span></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                     <h3 data-translate="skill4_name"></h3>
-                     <div class="progress">
-                        <div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                     <h3 data-translate="skill5_name"></h3>
-                     <div class="progress">
-                        <div class="progress-bar color-5" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"><span>85%</span></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                     <h3 data-translate="skill6_name"></h3>
-                     <div class="progress">
-                        <div class="progress-bar color-6" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="ftco-section ftco-project" id="projects-section">
-         <div class="container">
-            <div class="row justify-content-center pb-5">
-               <div class="col-md-12 heading-section text-center ftco-animate">
-                  <h1 class="big big-2" data-translate="projects_big_title"></h1>
-                  <h2 class="mb-4" data-translate="projects_title"></h2>
-                  <p data-translate="projects_description"></p>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-6">
-                  <div class="project img ftco-animate" style="background-image: url(images/project-1.jpg);">
-                     <a href="https://github.com/ersinelmas/RisenCore" target="_blank" rel="noopener noreferrer" class="d-flex justify-content-center align-items-center w-100 h-100">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                           <h3 data-translate="project1_title" style="color: white;"></h3>
-                           <span data-translate="project1_tech"></span>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="project img ftco-animate" style="background-image: url(images/project-2.jpg);">
-                     <a href="https://github.com/ersinelmas/Turkcell-CRM" target="_blank" rel="noopener noreferrer" class="d-flex justify-content-center align-items-center w-100 h-100">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                           <h3 data-translate="project2_title" style="color: white;"></h3>
-                           <span data-translate="project2_tech"></span>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="ftco-section" id="blog-section">
-         <div class="container">
-            <div class="row justify-content-center mb-5 pb-5">
-               <div class="col-md-7 heading-section text-center ftco-animate">
-                  <h1 class="big big-2" data-translate="blog_big_title"></h1>
-                  <h2 class="mb-4" data-translate="blog_title"></h2>
-                  <p data-translate="blog_description"></p>
-               </div>
-            </div>
-            <div class="row d-flex">
-               <div class="col-md-6 d-flex ftco-animate">
-                  <div class="blog-entry justify-content-end">
-                     <a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" rel="noopener noreferrer" class="block-20" style="background-image: url('images/image_1.jpg');"></a>
-                     <div class="text mt-3 float-right d-block">
-                        <div class="d-flex align-items-center mb-3 meta">
-                           <p class="mb-0"><a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" rel="noopener noreferrer" class="mr-2" data-translate="blog_read_more"></a></p>
-                        </div>
-                        <h3 class="heading"><a href="https://medium.com/@ersinelmas17/building-your-first-crud-api-with-spring-boot-and-jpa-f9e6148ac3e1" target="_blank" rel="noopener noreferrer" data-translate="blog1_title"></a></h3>
-                        <p data-translate="blog1_desc"></p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 d-flex ftco-animate">
-                  <div class="blog-entry justify-content-end">
-                     <a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" rel="noopener noreferrer" class="block-20" style="background-image: url('images/image_2.jpg');"></a>
-                     <div class="text mt-3 float-right d-block">
-                        <div class="d-flex align-items-center mb-3 meta">
-                           <p class="mb-0"><a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" rel="noopener noreferrer" class="mr-2" data-translate="blog_read_more"></a></p>
-                        </div>
-                        <h3 class="heading"><a href="https://medium.com/@ersinelmas17/how-to-create-and-test-your-first-spring-boot-project-a-beginners-guide-for-java-developers-33e24f1c87c5" target="_blank" rel="noopener noreferrer" data-translate="blog2_title"></a></h3>
-                        <p data-translate="blog2_desc"></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-         <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-               <div class="col-md-7 heading-section text-center ftco-animate">
-                  <h1 class="big big-2" data-translate="contact_big_title"></h1>
-                  <h2 class="mb-4" data-translate="contact_title"></h2>
-                  <p data-translate="contact_description"></p>
-               </div>
-            </div>
-            <div class="row d-flex contact-info mb-5">
-               <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                  <div class="align-self-stretch box p-4 text-center">
-                     <div class="icon d-flex align-items-center justify-content-center"><span class="icon-map-signs"></span></div>
-                     <h3 class="mb-4" data-translate="contact1_title"></h3>
-                     <p data-translate="contact_location_text"></p>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                  <div class="align-self-stretch box p-4 text-center">
-                     <div class="icon d-flex align-items-center justify-content-center"><span class="icon-phone2"></span></div>
-                     <h3 class="mb-4" data-translate="contact2_title"></h3>
-                     <p><a href="tel://+905433063014">+90 543 306 3014</a></p>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                  <div class="align-self-stretch box p-4 text-center">
-                     <div class="icon d-flex align-items-center justify-content-center"><span class="icon-paper-plane"></span></div>
-                     <h3 class="mb-4" data-translate="contact3_title"></h3>
-                     <p><a href="mailto:ersinelmas17@gmail.com">ersinelmas17@gmail.com</a></p>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                  <div class="align-self-stretch box p-4 text-center">
-                     <div class="icon d-flex align-items-center justify-content-center"><span class="icon-globe"></span></div>
-                     <h3 class="mb-4" data-translate="contact4_title"></h3>
-                     <p><a href="https://linkedin.com/in/ersin-elmas" target="_blank" rel="noopener noreferrer">LinkedIn</a> <br> <a href="https://github.com/ersinelmas" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <footer class="ftco-footer ftco-section">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 text-center">
-                  <p data-translate-children="footer_copyright"></p>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <div id="ftco-loader" class="show fullscreen">
-         <svg class="circular" width="48px" height="48px">
-            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
-         </svg>
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ersin Elmas | Full-Stack Yazılım Geliştirici</title>
+    <meta name="description" content="Full-stack geliştirici. Java, Spring Boot, .NET, React ve bulut altyapısı deneyimi. Kurumsal finans uygulamalarında güvenli ve ölçeklenebilir çözümler üretiyorum.">
+    <meta property="og:title" content="Ersin Elmas | Full-Stack Yazılım Geliştirici">
+    <meta property="og:description" content="Java, Spring Boot, .NET ve React ile mikroservis tabanlı finans uygulamaları geliştiren yazılım geliştirici.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ersinelmas.github.io/">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="#home">
+          <span>Ersin Elmas</span>
+          <span>Full-Stack Developer</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">☰</button>
+        <nav class="nav-links" id="nav-links">
+          <a href="#home" data-i18n="nav.home"></a>
+          <a href="#about" data-i18n="nav.about"></a>
+          <a href="#skills" data-i18n="nav.skills"></a>
+          <a href="#experience" data-i18n="nav.experience"></a>
+          <a href="#projects" data-i18n="nav.projects"></a>
+          <a href="#education" data-i18n="nav.education"></a>
+          <a href="#certificates" data-i18n="nav.certificates"></a>
+          <a href="#contact" data-i18n="nav.contact"></a>
+        </nav>
+        <div class="controls">
+          <div class="language-toggle" role="group" aria-label="Language selector">
+            <button class="toggle-btn" data-lang="tr" aria-pressed="true">TR</button>
+            <button class="toggle-btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <button class="theme-btn" id="theme-toggle" aria-label="Tema değiştir">🌙</button>
+        </div>
       </div>
-      <script src="js/jquery.min.js"></script>
-      <script src="js/jquery-migrate-3.0.1.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.easing.1.3.js"></script>
-      <script src="js/jquery.waypoints.min.js"></script>
-      <script src="js/jquery.stellar.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <script src="js/aos.js"></script>
-      <script src="js/jquery.animateNumber.min.js"></script>
-      <script src="js/scrollax.min.js"></script>
-      <script src="js/main.js"></script>
-      <script>
-         document.addEventListener('DOMContentLoaded', function() {
-             const translations = {};
-             
-             async function loadTranslations(lang) {
-                 try {
-                     const response = await fetch(`lang/${lang}.json?v=1.0.0`);
-                     if (!response.ok) throw new Error(`Could not load ${lang}.json`);
-                     translations[lang] = await response.json();
-                 } catch (error) {
-                     console.error("Translation loading error:", error);
-                 }
-             }
-             
-             function applyTranslations(lang) {
-                 const langData = translations[lang];
-                 if (!langData) return;
-                 
-                 document.querySelectorAll('[data-translate]').forEach(el => {
-                     const key = el.getAttribute('data-translate');
-                     if (langData[key]) el.innerHTML = langData[key];
-                 });
-                 
-                 document.querySelectorAll('[data-translate-children]').forEach(el => {
-                     const key = el.getAttribute('data-translate-children');
-                     if (langData[key]) el.innerHTML = langData[key];
-                 });
-                 
-                 document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
-                 document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-                 localStorage.setItem('language', lang);
-             }
-             
-             async function setLanguage(lang) {
-                 if (!translations[lang]) {
-                     await loadTranslations(lang);
-                 }
-                 applyTranslations(lang);
-             }
-             
-             document.getElementById('btn-tr').addEventListener('click', () => setLanguage('tr'));
-             document.getElementById('btn-en').addEventListener('click', () => setLanguage('en'));
-             
-             const savedLang = localStorage.getItem('language') || 'tr';
-             setLanguage(savedLang);
-         
-             const menu = document.getElementById('ftco-nav');
-             const toggler = document.querySelector('.navbar-toggler');
-             const menuLinks = document.querySelectorAll('#ftco-nav .nav-link');
-         
-             document.addEventListener('click', function(event) {
-                 if (!menu.contains(event.target) && !toggler.contains(event.target) && menu.classList.contains('show')) {
-                     toggler.click(); 
-                 }
-             });
-         
-             menuLinks.forEach(function(link) {
-                 link.addEventListener('click', function() {
-                     if (menu.classList.contains('show')) {
-                         toggler.click();
-                     }
-                 });
-             });
-             
-             toggler.addEventListener('click', function() {
-                 document.body.classList.toggle('mobile-menu-open');
-             });
-         
-         });
-      </script>
-   </body>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="grid hero-grid">
+            <div>
+              <span class="eyebrow" data-i18n="hero.eyebrow"></span>
+              <h1 data-i18n="hero.title"></h1>
+              <p class="lead" data-i18n="hero.subtitle"></p>
+              <div class="actions">
+                <a class="button" href="CV-Ersin-Elmas.pdf" download data-i18n="hero.actions.cv"></a>
+                <a class="button secondary" href="https://github.com/ersinelmas" target="_blank" rel="noreferrer" data-i18n="hero.actions.github"></a>
+                <a class="button secondary" href="https://linkedin.com/in/ersin-elmas" target="_blank" rel="noreferrer" data-i18n="hero.actions.linkedin"></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="section-header">
+                <div>
+                  <p class="section-subtitle">Profile</p>
+                  <h3 class="section-title">Ersin Elmas</h3>
+                </div>
+                <div class="badge">Open to work</div>
+              </div>
+              <div class="meta-row">
+                <span id="about-location"></span>
+                <span>•</span>
+                <span id="about-email"></span>
+                <span>•</span>
+                <span id="about-phone"></span>
+              </div>
+              <p class="muted" data-i18n="about.description"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="about.title"></h2>
+            <p class="section-subtitle">Full-stack · Java · Spring Boot · .NET · React</p>
+          </div>
+          <div class="card">
+            <p class="muted" data-i18n="about.description"></p>
+            <div class="tag-row" aria-label="Contact details">
+              <span class="skill-badge" id="about-detail-location"></span>
+              <span class="skill-badge" id="about-detail-email"></span>
+              <span class="skill-badge" id="about-detail-phone"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="skills.title"></h2>
+            <p class="section-subtitle">Core stacks and tools</p>
+          </div>
+          <div class="grid skill-grid" id="skills-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="experience.title"></h2>
+            <p class="section-subtitle">Recent roles & impact</p>
+          </div>
+          <div class="timeline" id="experience-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="projects.title"></h2>
+            <p class="section-subtitle">Selected builds</p>
+          </div>
+          <div class="grid project-grid" id="projects-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="education.title"></h2>
+            <p class="section-subtitle">Academic background</p>
+          </div>
+          <div class="timeline" id="education-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="certificates">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="certificates.title"></h2>
+            <p class="section-subtitle">Continuous learning</p>
+          </div>
+          <div class="card">
+            <ul class="list" id="certificate-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="contact.title"></h2>
+            <p class="section-subtitle">Let's get in touch</p>
+          </div>
+          <div class="card contact-card">
+            <div>
+              <h3 data-i18n="contact.headline"></h3>
+              <p class="muted" data-i18n="contact.description"></p>
+              <div class="tag-row">
+                <span class="skill-badge" id="contact-location"></span>
+                <a class="skill-badge" href="https://github.com/ersinelmas" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="skill-badge" href="https://linkedin.com/in/ersin-elmas" target="_blank" rel="noreferrer">LinkedIn</a>
+              </div>
+            </div>
+            <div>
+              <a class="button" id="contact-email" href="mailto:ersinelmas17@gmail.com" data-i18n="contact.emailLabel"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Ersin Elmas</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
 </html>
