@@ -456,8 +456,8 @@ button:focus-visible {
 
 @media (max-width: 640px) {
   .site-header {
-    --header-height: 80px;
-    margin-bottom: 10px;
+    --header-height: 0px;
+    margin-bottom: 6px;
   }
 
   .navbar {
