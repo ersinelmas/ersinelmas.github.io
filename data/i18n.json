@@ -1,0 +1,268 @@
+{
+  "tr": {
+    "meta": {
+      "title": "Ersin Elmas | Full-Stack Yazılım Geliştirici",
+      "description": "Full-stack geliştirici. Java, Spring Boot, .NET, React ve bulut altyapısı deneyimi. Kurumsal finans uygulamalarında güvenli ve ölçeklenebilir çözümler üretiyorum.",
+      "ogTitle": "Ersin Elmas | Full-Stack Yazılım Geliştirici",
+      "ogDescription": "Java, Spring Boot, .NET ve React ile mikroservis tabanlı finans uygulamaları geliştiren yazılım geliştirici."
+    },
+    "nav": {
+      "home": "Ana Sayfa",
+      "about": "Hakkımda",
+      "skills": "Yetenekler",
+      "experience": "Deneyim",
+      "projects": "Projeler",
+      "education": "Eğitim",
+      "certificates": "Sertifikalar",
+      "contact": "İletişim"
+    },
+    "hero": {
+      "eyebrow": "Full-Stack Yazılım Geliştirici",
+      "title": "Merhaba, ben Ersin Elmas.",
+      "subtitle": "Java, Spring Boot ve .NET ağırlıklı, kurumsal ölçekte finansal uygulamalar geliştiren bir yazılım geliştiricisiyim.",
+      "actions": {
+        "cv": "CV'yi indir",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
+      }
+    },
+    "about": {
+      "title": "Hakkımda",
+      "description": "Full-stack geliştirme yapıyorum; ağırlıklı olarak Java, Spring Boot ve .NET ile güvenli, ölçeklenebilir backend'ler kuruyor, React ile modern arayüzler geliştiriyorum. Mikroservis mimarisi, JWT tabanlı kimlik doğrulama ve üretim ortamı güvenliği konularında deneyimliyim. Ekiplerle yakın çalışıp, iyi dokümante edilmiş ve test edilmiş çözümler üretmeye odaklanıyorum.",
+      "details": {
+        "location": "Çanakkale, Türkiye",
+        "email": "ersinelmas17@gmail.com",
+        "phone": "+90 543 306 3014"
+      }
+    },
+    "skills": {
+      "title": "Yetenekler",
+      "categories": [
+        {
+          "name": "Frontend",
+          "items": ["JavaScript", "React", "HTML", "CSS"]
+        },
+        {
+          "name": "Backend",
+          "items": ["Java", "Spring Boot", ".NET Framework", "RESTful API", "JWT"]
+        },
+        {
+          "name": "Araçlar",
+          "items": ["PostgreSQL", "MSSQL", "Docker", "Git", "Jira", "Swagger", "JUnit"]
+        }
+      ]
+    },
+    "experience": {
+      "title": "Deneyim",
+      "entries": [
+        {
+          "role": "Software Development Assistant Specialist",
+          "company": "ATP Tradesoft",
+          "period": "07/2024 – 04/2025",
+          "location": "İstanbul, Türkiye",
+          "highlights": [
+            "38 kurumsal müşteriye hizmet veren .NET tabanlı sanal şube uygulamasının geliştirme ve bakımında görev aldım; platform BIST işlem hacminin yaklaşık %51'ini yönetiyor.",
+            "Müşteriye özel güvenlik ihtiyaçları için rate limiting ve operasyonel iyileştirmeler geliştirdim.",
+            "Yeni uluslararası müşteriye onboarding için platformun İngilizce ve Azerbaycanca lokalizasyonunu yönettim.",
+            "Üretim ortamındaki ekiplerle çapraz fonksiyonlu şekilde çalıştım."
+          ]
+        },
+        {
+          "role": "Intern Software Engineer",
+          "company": "Yapı Kredi Technology",
+          "period": "06/2022 – 08/2023",
+          "location": "Remote",
+          "highlights": [
+            "Java ve Spring Framework ile kurumsal backend geliştirme süreçlerini destekledim.",
+            "Monolitten mikroservislere geçiş projesinde JUnit tabanlı kapsamlı testler yazarak güvenilirliği artırdım.",
+            "Agile süreçlerinde Git ve Jira kullanarak büyük ölçekli proje yapısına katkı sağladım."
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projeler",
+      "items": [
+        {
+          "name": "Full-Stack Dijital Yaşam Asistanı",
+          "description": "JWT tabanlı kimlik doğrulama, RBAC, görev ve kişisel finans modülleri, admin paneli ve Swagger dokümantasyonuna sahip uçtan uca yaşam asistanı.",
+          "tech": ["Java", "Spring Boot", "React", "PostgreSQL", "Docker", "Gemini API"],
+          "links": {
+            "repo": "https://github.com/ersinelmas",
+            "demo": null
+          }
+        },
+        {
+          "name": "Mikroservis Tabanlı CRM",
+          "description": "Kimlik doğrulama, müşteri, fatura ve sipariş servislerinden oluşan, Docker ile orkestrasyonu yapılan kurumsal CRM uygulaması.",
+          "tech": ["Java", "Spring Boot", "PostgreSQL", "Docker", "Microservices"],
+          "links": {
+            "repo": "https://github.com/ersinelmas",
+            "demo": null
+          }
+        }
+      ]
+    },
+    "education": {
+      "title": "Eğitim",
+      "entries": [
+        {
+          "institution": "Ege Üniversitesi",
+          "degree": "Bilgisayar Mühendisliği Lisans",
+          "period": "08/2019 – 07/2023",
+          "location": "İzmir, Türkiye",
+          "details": "GPA: 3.70 / 4.00 • Yüksek Onur Derecesi • Tez: Makine Öğrenmesi ile Borsa Endeksi Analizi"
+        }
+      ]
+    },
+    "certificates": {
+      "title": "Sertifikalar",
+      "items": [
+        "GYGY 3.0 Programming with Java Training Program – Turkcell",
+        "Introduction to Data Analytics – IBM",
+        "McKinsey Forward Program – McKinsey & Company",
+        "Introducing Generative AI with AWS – Udacity"
+      ]
+    },
+    "contact": {
+      "title": "İletişim",
+      "headline": "Birlikte üretelim",
+      "description": "Yeni projeler, danışmanlık veya iş birlikleri için bana e-posta gönderebilirsiniz.",
+      "emailLabel": "E-posta gönder",
+      "location": "Çanakkale, Türkiye"
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Ersin Elmas | Full-Stack Software Developer",
+      "description": "Full-stack developer focused on Java, Spring Boot, .NET, and React. I build secure and scalable services for enterprise-grade financial products.",
+      "ogTitle": "Ersin Elmas | Full-Stack Software Developer",
+      "ogDescription": "Software developer building microservice-based financial applications with Java, Spring Boot, .NET, and React."
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "experience": "Experience",
+      "projects": "Projects",
+      "education": "Education",
+      "certificates": "Certificates",
+      "contact": "Contact"
+    },
+    "hero": {
+      "eyebrow": "Full-Stack Software Developer",
+      "title": "Hi, I'm Ersin Elmas.",
+      "subtitle": "Software developer building enterprise-scale financial applications with Java, Spring Boot, and .NET.",
+      "actions": {
+        "cv": "Download CV",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
+      }
+    },
+    "about": {
+      "title": "About",
+      "description": "I work across the stack with a strong focus on backend engineering—building secure, scalable services with Java, Spring Boot, and .NET, and pairing them with modern React interfaces. Experienced in microservices, JWT-based authentication, and production-grade security. I collaborate closely with teams to ship well-documented, well-tested software.",
+      "details": {
+        "location": "Çanakkale, Turkey",
+        "email": "ersinelmas17@gmail.com",
+        "phone": "+90 543 306 3014"
+      }
+    },
+    "skills": {
+      "title": "Skills",
+      "categories": [
+        {
+          "name": "Frontend",
+          "items": ["JavaScript", "React", "HTML", "CSS"]
+        },
+        {
+          "name": "Backend",
+          "items": ["Java", "Spring Boot", ".NET Framework", "RESTful API", "JWT"]
+        },
+        {
+          "name": "Tools",
+          "items": ["PostgreSQL", "MSSQL", "Docker", "Git", "Jira", "Swagger", "JUnit"]
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "entries": [
+        {
+          "role": "Software Development Assistant Specialist",
+          "company": "ATP Tradesoft",
+          "period": "07/2024 – 04/2025",
+          "location": "Istanbul, Turkey",
+          "highlights": [
+            "Contributed to a .NET-based virtual branch platform serving 38 corporate clients and managing ~51% of BIST trading volume.",
+            "Delivered rate limiting and operational hardening for client-specific security requirements.",
+            "Led full UI localization into English and Azerbaijani to onboard a new international client.",
+            "Collaborated closely with cross-functional teams in a production-grade financial environment."
+          ]
+        },
+        {
+          "role": "Intern Software Engineer",
+          "company": "Yapı Kredi Technology",
+          "period": "06/2022 – 08/2023",
+          "location": "Remote",
+          "highlights": [
+            "Supported enterprise backend development with Java and the Spring Framework.",
+            "Wrote comprehensive JUnit tests to improve reliability during a monolith-to-microservices migration.",
+            "Worked within Agile workflows using Git and Jira on a large-scale corporate project."
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "items": [
+        {
+          "name": "Full-Stack Digital Life Assistant",
+          "description": "End-to-end assistant featuring JWT auth, RBAC, task and finance modules, an admin panel, and Swagger documentation.",
+          "tech": ["Java", "Spring Boot", "React", "PostgreSQL", "Docker", "Gemini API"],
+          "links": {
+            "repo": "https://github.com/ersinelmas",
+            "demo": null
+          }
+        },
+        {
+          "name": "Microservices-Based CRM",
+          "description": "Corporate CRM composed of authentication, customer, invoice, and order services orchestrated with Docker.",
+          "tech": ["Java", "Spring Boot", "PostgreSQL", "Docker", "Microservices"],
+          "links": {
+            "repo": "https://github.com/ersinelmas",
+            "demo": null
+          }
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "entries": [
+        {
+          "institution": "Ege University",
+          "degree": "BSc in Computer Engineering",
+          "period": "08/2019 – 07/2023",
+          "location": "Izmir, Turkey",
+          "details": "GPA: 3.70 / 4.00 • High Honors • Thesis: Analysis of Stock Market Index Movements with Machine Learning"
+        }
+      ]
+    },
+    "certificates": {
+      "title": "Certificates",
+      "items": [
+        "GYGY 3.0 Programming with Java Training Program – Turkcell",
+        "Introduction to Data Analytics – IBM",
+        "McKinsey Forward Program – McKinsey & Company",
+        "Introducing Generative AI with AWS – Udacity"
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "headline": "Let's build together",
+      "description": "Feel free to reach out for new projects, consulting, or collaborations.",
+      "emailLabel": "Send an email",
+      "location": "Çanakkale, Turkey"
+    }
+  }
+}
