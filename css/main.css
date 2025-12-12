@@ -454,16 +454,22 @@ button:focus-visible {
 
 @media (max-width: 640px) {
   .site-header {
-    --header-height: 96px;
+    --header-height: 80px;
+    margin-bottom: 10px;
   }
 
   .navbar {
     gap: 8px;
+    padding: 6px 0;
+  }
+
+  .brand {
+    padding: 4px;
   }
 
   .header-actions {
     margin-left: auto;
-    gap: 8px;
+    gap: 6px;
   }
 
   .controls {
