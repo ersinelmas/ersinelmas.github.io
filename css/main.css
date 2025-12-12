@@ -97,15 +97,15 @@ button:focus-visible {
 
 .brand {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  flex-direction: column;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  padding: 6px 10px;
-  border-radius: 10px;
-  background: var(--muted-surface);
-  color: var(--text);
-  white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+
+.brand span:last-child {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .nav-links {
@@ -120,7 +120,6 @@ button:focus-visible {
   color: var(--muted);
   font-weight: 600;
   letter-spacing: 0.01em;
-  white-space: nowrap;
   transition: color 0.2s ease, background 0.2s ease;
 }
 

@@ -20,8 +20,6 @@
       "eyebrow": "Full-Stack Yazılım Geliştirici",
       "title": "Merhaba, ben Ersin Elmas.",
       "subtitle": "Java, Spring Boot ve .NET ağırlıklı, kurumsal ölçekte finansal uygulamalar geliştiren bir yazılım geliştiricisiyim.",
-      "profile": "Profil",
-      "availability": "İşe açığım",
       "actions": {
         "cv": "CV'yi indir",
         "github": "GitHub",
@@ -30,7 +28,6 @@
     },
     "about": {
       "title": "Hakkımda",
-      "subtitle": "Full-stack · Java · Spring Boot · .NET · React",
       "description": "Full-stack geliştirme yapıyorum; ağırlıklı olarak Java, Spring Boot ve .NET ile güvenli, ölçeklenebilir backend'ler kuruyor, React ile modern arayüzler geliştiriyorum. Mikroservis mimarisi, JWT tabanlı kimlik doğrulama ve üretim ortamı güvenliği konularında deneyimliyim. Ekiplerle yakın çalışıp, iyi dokümante edilmiş ve test edilmiş çözümler üretmeye odaklanıyorum.",
       "details": {
         "location": "Çanakkale, Türkiye",
@@ -40,7 +37,6 @@
     },
     "skills": {
       "title": "Yetenekler",
-      "subtitle": "Çekirdek teknolojiler ve araçlar",
       "categories": [
         {
           "name": "Frontend",
@@ -58,7 +54,6 @@
     },
     "experience": {
       "title": "Deneyim",
-      "subtitle": "Son roller ve katkılar",
       "entries": [
         {
           "role": "Software Development Assistant Specialist",
@@ -87,7 +82,6 @@
     },
     "projects": {
       "title": "Projeler",
-      "subtitle": "Öne çıkan çalışmalar",
       "items": [
         {
           "name": "Full-Stack Dijital Yaşam Asistanı",
@@ -111,7 +105,6 @@
     },
     "education": {
       "title": "Eğitim",
-      "subtitle": "Akademik geçmiş",
       "entries": [
         {
           "institution": "Ege Üniversitesi",
@@ -124,7 +117,6 @@
     },
     "certificates": {
       "title": "Sertifikalar",
-      "subtitle": "Sürekli öğrenme",
       "items": [
         "GYGY 3.0 Programming with Java Training Program – Turkcell",
         "Introduction to Data Analytics – IBM",
@@ -134,7 +126,6 @@
     },
     "contact": {
       "title": "İletişim",
-      "subtitle": "Bağlantıda kalalım",
       "headline": "Birlikte üretelim",
       "description": "Yeni projeler, danışmanlık veya iş birlikleri için bana e-posta gönderebilirsiniz.",
       "emailLabel": "E-posta gönder",
@@ -162,8 +153,6 @@
       "eyebrow": "Full-Stack Software Developer",
       "title": "Hi, I'm Ersin Elmas.",
       "subtitle": "Software developer building enterprise-scale financial applications with Java, Spring Boot, and .NET.",
-      "profile": "Profile",
-      "availability": "Open to work",
       "actions": {
         "cv": "Download CV",
         "github": "GitHub",
@@ -172,7 +161,6 @@
     },
     "about": {
       "title": "About",
-      "subtitle": "Full-stack · Java · Spring Boot · .NET · React",
       "description": "I work across the stack with a strong focus on backend engineering—building secure, scalable services with Java, Spring Boot, and .NET, and pairing them with modern React interfaces. Experienced in microservices, JWT-based authentication, and production-grade security. I collaborate closely with teams to ship well-documented, well-tested software.",
       "details": {
         "location": "Çanakkale, Turkey",
@@ -182,7 +170,6 @@
     },
     "skills": {
       "title": "Skills",
-      "subtitle": "Core stacks and tools",
       "categories": [
         {
           "name": "Frontend",
@@ -200,7 +187,6 @@
     },
     "experience": {
       "title": "Experience",
-      "subtitle": "Recent roles & impact",
       "entries": [
         {
           "role": "Software Development Assistant Specialist",
@@ -229,7 +215,6 @@
     },
     "projects": {
       "title": "Projects",
-      "subtitle": "Selected builds",
       "items": [
         {
           "name": "Full-Stack Digital Life Assistant",
@@ -253,7 +238,6 @@
     },
     "education": {
       "title": "Education",
-      "subtitle": "Academic background",
       "entries": [
         {
           "institution": "Ege University",
@@ -266,7 +250,6 @@
     },
     "certificates": {
       "title": "Certificates",
-      "subtitle": "Continuous learning",
       "items": [
         "GYGY 3.0 Programming with Java Training Program – Turkcell",
         "Introduction to Data Analytics – IBM",
@@ -276,7 +259,6 @@
     },
     "contact": {
       "title": "Contact",
-      "subtitle": "Let's get in touch",
       "headline": "Let's build together",
       "description": "Feel free to reach out for new projects, consulting, or collaborations.",
       "emailLabel": "Send an email",
