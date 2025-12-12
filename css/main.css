@@ -12,6 +12,7 @@
   --max-width: 1100px;
   --radius: 14px;
   --gutter: 20px;
+  --button-text: #0f141c;
 }
 
 :root[data-theme='light'] {
@@ -24,6 +25,7 @@
   --accent-strong: #1e40af;
   --border: rgba(11, 18, 32, 0.12);
   --shadow: 0 18px 50px rgba(15, 23, 42, 0.14);
+  --button-text: #ffffff;
 }
 
 * {
@@ -231,7 +233,7 @@ button:focus-visible {
   gap: 10px;
   padding: 12px 16px;
   background: var(--accent);
-  color: #0f141c;
+  color: var(--button-text);
   border-radius: 12px;
   font-weight: 700;
   border: none;
