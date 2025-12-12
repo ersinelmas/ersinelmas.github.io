@@ -16,6 +16,15 @@
       "certificates": "Sertifikalar",
       "contact": "İletişim"
     },
+    "subtitles": {
+      "about": "Full-stack · Java · Spring Boot · .NET · React",
+      "skills": "Temel teknolojiler",
+      "experience": "Güncel roller ve etkiler",
+      "projects": "Öne çıkan projeler",
+      "education": "Akademik geçmiş",
+      "certificates": "Sürekli öğrenme",
+      "contact": "İletişime geçelim"
+    },
     "hero": {
       "eyebrow": "Full-Stack Yazılım Geliştirici",
       "title": "Merhaba, ben Ersin Elmas.",
@@ -24,6 +33,11 @@
         "cv": "CV'yi indir",
         "github": "GitHub",
         "linkedin": "LinkedIn"
+      },
+      "profile": {
+        "heading": "Profil",
+        "name": "Ersin Elmas",
+        "badge": "Çalışmaya açık"
       }
     },
     "about": {
@@ -149,6 +163,15 @@
       "certificates": "Certificates",
       "contact": "Contact"
     },
+    "subtitles": {
+      "about": "Full-stack · Java · Spring Boot · .NET · React",
+      "skills": "Core stacks and tools",
+      "experience": "Recent roles & impact",
+      "projects": "Selected builds",
+      "education": "Academic background",
+      "certificates": "Continuous learning",
+      "contact": "Let's get in touch"
+    },
     "hero": {
       "eyebrow": "Full-Stack Software Developer",
       "title": "Hi, I'm Ersin Elmas.",
@@ -157,6 +180,11 @@
         "cv": "Download CV",
         "github": "GitHub",
         "linkedin": "LinkedIn"
+      },
+      "profile": {
+        "heading": "Profile",
+        "name": "Ersin Elmas",
+        "badge": "Open to work"
       }
     },
     "about": {
