@@ -456,7 +456,7 @@ button:focus-visible {
 
 @media (max-width: 640px) {
   .site-header {
-    --header-height: 68px;
+    --header-height: 0px;
     margin-bottom: 6px;
   }
 
