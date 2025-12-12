@@ -102,7 +102,7 @@
           "description": "JWT tabanlı kimlik doğrulama, RBAC, görev ve kişisel finans modülleri, admin paneli ve Swagger dokümantasyonuna sahip uçtan uca yaşam asistanı.",
           "tech": ["Java", "Spring Boot", "React", "PostgreSQL", "Docker", "Gemini API"],
           "links": {
-            "repo": "https://github.com/ersinelmas",
+            "repo": "https://github.com/ersinelmas/RisenCore",
             "demo": null
           }
         },
@@ -111,7 +111,7 @@
           "description": "Kimlik doğrulama, müşteri, fatura ve sipariş servislerinden oluşan, Docker ile orkestrasyonu yapılan kurumsal CRM uygulaması.",
           "tech": ["Java", "Spring Boot", "PostgreSQL", "Docker", "Microservices"],
           "links": {
-            "repo": "https://github.com/ersinelmas",
+            "repo": "https://github.com/ersinelmas/Turkcell-CRM",
             "demo": null
           }
         }
@@ -249,7 +249,7 @@
           "description": "End-to-end assistant featuring JWT auth, RBAC, task and finance modules, an admin panel, and Swagger documentation.",
           "tech": ["Java", "Spring Boot", "React", "PostgreSQL", "Docker", "Gemini API"],
           "links": {
-            "repo": "https://github.com/ersinelmas",
+            "repo": "https://github.com/ersinelmas/RisenCore",
             "demo": null
           }
         },
@@ -258,7 +258,7 @@
           "description": "Corporate CRM composed of authentication, customer, invoice, and order services orchestrated with Docker.",
           "tech": ["Java", "Spring Boot", "PostgreSQL", "Docker", "Microservices"],
           "links": {
-            "repo": "https://github.com/ersinelmas",
+            "repo": "https://github.com/ersinelmas/Turkcell-CRM",
             "demo": null
           }
         }
