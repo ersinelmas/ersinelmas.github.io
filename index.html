@@ -18,8 +18,9 @@
   <body>
     <header class="site-header">
       <div class="container navbar">
-        <a class="brand" href="#home">EE</a>
-        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">☰</button>
+        <a class="brand" href="#home" aria-label="Ersin Elmas ana sayfa">
+          <img src="favicon.ico" alt="EE logosu">
+        </a>
         <nav class="nav-links" id="nav-links">
           <a href="#home" data-i18n="nav.home"></a>
           <a href="#about" data-i18n="nav.about"></a>
@@ -30,12 +31,15 @@
           <a href="#certificates" data-i18n="nav.certificates"></a>
           <a href="#contact" data-i18n="nav.contact"></a>
         </nav>
-        <div class="controls">
-          <div class="language-toggle" role="group" aria-label="Language selector">
-            <button class="toggle-btn" data-lang="tr" aria-pressed="true">TR</button>
-            <button class="toggle-btn" data-lang="en" aria-pressed="false">EN</button>
+        <div class="header-actions">
+          <div class="controls">
+            <div class="language-toggle" role="group" aria-label="Language selector">
+              <button class="toggle-btn" data-lang="tr" aria-pressed="true">TR</button>
+              <button class="toggle-btn" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+            <button class="theme-btn" id="theme-toggle" aria-label="Tema değiştir">🌙</button>
           </div>
-          <button class="theme-btn" id="theme-toggle" aria-label="Tema değiştir">🌙</button>
+          <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">☰</button>
         </div>
       </div>
     </header>

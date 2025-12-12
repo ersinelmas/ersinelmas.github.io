@@ -94,15 +94,20 @@ button:focus-visible {
   align-items: center;
   justify-content: space-between;
   min-height: var(--header-height);
-  padding: 8px 0;
+  gap: 12px;
+  padding: 10px 0;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  font-size: 1.1rem;
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.brand img {
+  width: 32px;
+  height: 32px;
 }
 
 .nav-links {
@@ -130,7 +135,7 @@ button:focus-visible {
 .controls {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .toggle-btn {
@@ -159,6 +164,12 @@ button:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .menu-toggle {
@@ -419,18 +430,21 @@ button:focus-visible {
     flex-direction: column;
     padding: 18px var(--gutter) 28px;
     border-bottom: 1px solid transparent;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-    transform: translateY(-130%);
-    transition: transform 0.25s ease, opacity 0.2s ease;
+    box-shadow: none;
+    transform: translateY(-120%);
+    transition: transform 0.25s ease, opacity 0.2s ease, visibility 0.2s ease;
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
   }
 
   .nav-links.open {
     transform: translateY(0);
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
     border-bottom-color: var(--border);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
   }
 
   .menu-toggle {
@@ -444,22 +458,25 @@ button:focus-visible {
   }
 
   .navbar {
-    flex-wrap: wrap;
     gap: 8px;
   }
 
-  .brand {
-    margin-right: auto;
+  .header-actions {
+    margin-left: auto;
+    gap: 8px;
   }
 
   .controls {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    gap: 6px;
   }
 
-  .theme-btn {
-    margin-left: auto;
+  .toggle-btn {
+    padding: 8px 10px;
+  }
+
+  .theme-btn,
+  .menu-toggle {
+    padding: 8px 10px;
   }
 
   .section {
