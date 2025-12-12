@@ -12,18 +12,20 @@
   --max-width: 1100px;
   --radius: 14px;
   --gutter: 20px;
+  --button-text: #0f141c;
 }
 
 :root[data-theme='light'] {
-  --bg: #f5f7fb;
-  --surface: #ffffff;
-  --muted-surface: #f0f3fa;
-  --text: #0f141c;
-  --muted: #4b5565;
+  --bg: #ffffff;
+  --surface: #f2f4f7;
+  --muted-surface: #e6eaf1;
+  --text: #0b1220;
+  --muted: #596273;
   --accent: #2563eb;
-  --accent-strong: #1d4ed8;
-  --border: rgba(15, 20, 28, 0.08);
-  --shadow: 0 20px 60px rgba(15, 20, 28, 0.15);
+  --accent-strong: #1e40af;
+  --border: rgba(11, 18, 32, 0.12);
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.14);
+  --button-text: #ffffff;
 }
 
 * {
@@ -86,7 +88,7 @@ button:focus-visible {
 }
 
 :root[data-theme='light'] .site-header {
-  background: rgba(245, 247, 251, 0.85);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .navbar {
@@ -231,7 +233,7 @@ button:focus-visible {
   gap: 10px;
   padding: 12px 16px;
   background: var(--accent);
-  color: #0f141c;
+  color: var(--button-text);
   border-radius: 12px;
   font-weight: 700;
   border: none;
@@ -454,16 +456,22 @@ button:focus-visible {
 
 @media (max-width: 640px) {
   .site-header {
-    --header-height: 96px;
+    --header-height: 68px;
+    margin-bottom: 6px;
   }
 
   .navbar {
     gap: 8px;
+    padding: 6px 0;
+  }
+
+  .brand {
+    padding: 4px;
   }
 
   .header-actions {
     margin-left: auto;
-    gap: 8px;
+    gap: 6px;
   }
 
   .controls {
