@@ -27,6 +27,14 @@ const elements = {
 
 const getValue = (obj, path) => path.split('.').reduce((acc, key) => acc?.[key], obj);
 
+const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;'
+}[char]));
+
 async function loadTranslations() {
   if (state.translations) return state.translations;
   const response = await fetch('data/i18n.json');
@@ -40,11 +48,15 @@ function setTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
 }
 
+function updateThemeButton(theme) {
+  elements.themeButton.textContent = theme === 'dark' ? '🌙' : '☀️';
+  elements.themeButton.setAttribute('aria-label', theme === 'dark' ? 'Açık temaya geç' : 'Koyu temaya geç');
+}
+
 function toggleTheme() {
   const next = state.theme === 'dark' ? 'light' : 'dark';
   setTheme(next);
-  elements.themeButton.textContent = next === 'dark' ? '🌙' : '☀️';
-  elements.themeButton.setAttribute('aria-label', next === 'dark' ? 'Koyu tema' : 'Açık tema');
+  updateThemeButton(next);
 }
 
 function setReducedMotion() {
@@ -91,10 +103,10 @@ function renderSkills(skills) {
     card.className = 'card';
     card.innerHTML = `
       <div class="section-header">
-        <h3 class="section-title">${category.name}</h3>
+        <h3 class="section-title">${escapeHtml(category.name)}</h3>
       </div>
       <div class="tag-row">
-        ${category.items.map((item) => `<span class="skill-badge">${item}</span>`).join('')}
+        ${category.items.map((item) => `<span class="skill-badge">${escapeHtml(item)}</span>`).join('')}
       </div>
     `;
     elements.skillsList.appendChild(card);
@@ -109,13 +121,13 @@ function renderExperience(experience) {
     item.innerHTML = `
       <div class="timeline-head">
         <div>
-          <h3 class="section-title">${entry.role}</h3>
-          <p class="muted">${entry.company} · ${entry.location}</p>
+          <h3 class="section-title">${escapeHtml(entry.role)}</h3>
+          <p class="muted">${escapeHtml(entry.company)} · ${escapeHtml(entry.location)}</p>
         </div>
-        <span class="badge">${entry.period}</span>
+        <span class="badge">${escapeHtml(entry.period)}</span>
       </div>
       <ul class="list">
-        ${entry.highlights.map((h) => `<li>${h}</li>`).join('')}
+        ${entry.highlights.map((h) => `<li>${escapeHtml(h)}</li>`).join('')}
       </ul>
     `;
     elements.experienceList.appendChild(item);
@@ -128,18 +140,18 @@ function renderProjects(projects) {
     const card = document.createElement('div');
     card.className = 'card project-card';
     const repoLink = project.links?.repo
-      ? `<a class="link-btn" href="${project.links.repo}" target="_blank" rel="noreferrer">Repo</a>`
+      ? `<a class="link-btn" href="${escapeHtml(project.links.repo)}" target="_blank" rel="noreferrer">Repo</a>`
       : '';
     const demoLink = project.links?.demo
-      ? `<a class="link-btn" href="${project.links.demo}" target="_blank" rel="noreferrer">Demo</a>`
+      ? `<a class="link-btn" href="${escapeHtml(project.links.demo)}" target="_blank" rel="noreferrer">Demo</a>`
       : '';
     card.innerHTML = `
       <div class="section-header">
-        <h3 class="section-title">${project.name}</h3>
-        ${project.tech?.length ? `<span class="badge">${project.tech[0]}</span>` : ''}
+        <h3 class="section-title">${escapeHtml(project.name)}</h3>
+        ${project.tech?.length ? `<span class="badge">${escapeHtml(project.tech[0])}</span>` : ''}
       </div>
-      <p class="muted">${project.description}</p>
-      <div class="tag-row">${project.tech.map((t) => `<span class="skill-badge">${t}</span>`).join('')}</div>
+      <p class="muted">${escapeHtml(project.description)}</p>
+      <div class="tag-row">${project.tech.map((t) => `<span class="skill-badge">${escapeHtml(t)}</span>`).join('')}</div>
       <div class="project-actions">${repoLink}${demoLink}</div>
     `;
     elements.projectsList.appendChild(card);
@@ -154,12 +166,12 @@ function renderEducation(education) {
     item.innerHTML = `
       <div class="timeline-head">
         <div>
-          <h3 class="section-title">${entry.institution}</h3>
-          <p class="muted">${entry.degree} · ${entry.location}</p>
+          <h3 class="section-title">${escapeHtml(entry.institution)}</h3>
+          <p class="muted">${escapeHtml(entry.degree)} · ${escapeHtml(entry.location)}</p>
         </div>
-        <span class="badge">${entry.period}</span>
+        <span class="badge">${escapeHtml(entry.period)}</span>
       </div>
-      <p class="muted">${entry.details}</p>
+      <p class="muted">${escapeHtml(entry.details)}</p>
     `;
     elements.educationList.appendChild(item);
   });
@@ -255,7 +267,7 @@ function bindEvents() {
 (function init() {
   setTheme(state.theme);
   setReducedMotion();
-  elements.themeButton.textContent = state.theme === 'dark' ? '🌙' : '☀️';
+  updateThemeButton(state.theme);
   elements.year.textContent = new Date().getFullYear();
   bindEvents();
   render();

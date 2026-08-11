@@ -6,6 +6,9 @@
       "ogTitle": "Ersin Elmas | Full-Stack Yazılım Geliştirici",
       "ogDescription": "Java, Spring Boot, .NET ve React ile mikroservis tabanlı finans uygulamaları geliştiren yazılım geliştirici."
     },
+    "a11y": {
+      "skipLink": "İçeriğe geç"
+    },
     "nav": {
       "home": "Ana Sayfa",
       "about": "Hakkımda",
@@ -152,6 +155,9 @@
       "description": "Full-stack developer focused on Java, Spring Boot, .NET, and React. I build secure and scalable services for enterprise-grade financial products.",
       "ogTitle": "Ersin Elmas | Full-Stack Software Developer",
       "ogDescription": "Software developer building microservice-based financial applications with Java, Spring Boot, .NET, and React."
+    },
+    "a11y": {
+      "skipLink": "Skip to content"
     },
     "nav": {
       "home": "Home",

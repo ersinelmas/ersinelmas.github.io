@@ -9,13 +9,39 @@
     <meta property="og:description" content="Java, Spring Boot, .NET ve React ile mikroservis tabanlı finans uygulamaları geliştiren yazılım geliştirici.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ersinelmas.github.io/">
+    <meta property="og:image" content="https://ersinelmas.github.io/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="tr_TR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ersin Elmas | Full-Stack Yazılım Geliştirici">
+    <meta name="twitter:description" content="Java, Spring Boot, .NET ve React ile mikroservis tabanlı finans uygulamaları geliştiren yazılım geliştirici.">
+    <meta name="twitter:image" content="https://ersinelmas.github.io/images/og-image.png">
+    <meta name="theme-color" content="#0f141c">
+    <link rel="canonical" href="https://ersinelmas.github.io/">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ersin Elmas",
+      "jobTitle": "Full-Stack Yazılım Geliştirici",
+      "url": "https://ersinelmas.github.io/",
+      "email": "mailto:ersinelmas17@gmail.com",
+      "sameAs": [
+        "https://github.com/ersinelmas",
+        "https://linkedin.com/in/ersin-elmas"
+      ],
+      "knowsAbout": ["Java", "Spring Boot", ".NET", "React", "Docker", "PostgreSQL"]
+    }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content" data-i18n="a11y.skipLink">İçeriğe geç</a>
     <header class="site-header">
       <div class="container navbar">
         <a class="brand" href="#home" aria-label="Ersin Elmas ana sayfa">
@@ -33,18 +59,24 @@
         </nav>
         <div class="header-actions">
           <div class="controls">
-            <div class="language-toggle" role="group" aria-label="Language selector">
+            <div class="language-toggle" role="group" aria-label="Dil seçici">
               <button class="toggle-btn" data-lang="tr" aria-pressed="true">TR</button>
               <button class="toggle-btn" data-lang="en" aria-pressed="false">EN</button>
             </div>
-            <button class="theme-btn" id="theme-toggle" aria-label="Tema değiştir">🌙</button>
+            <button class="theme-btn" id="theme-toggle" aria-label="Açık temaya geç">🌙</button>
           </div>
-          <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">☰</button>
+          <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menüyü aç/kapat">☰</button>
         </div>
       </div>
     </header>
 
-    <main>
+    <noscript>
+      <div class="container" style="padding: 24px 20px;">
+        <p>Bu sayfanın içeriğini görüntülemek için JavaScript'i etkinleştirmeniz gerekiyor. İletişim: <a href="mailto:ersinelmas17@gmail.com">ersinelmas17@gmail.com</a> · <a href="https://github.com/ersinelmas" target="_blank" rel="noreferrer">GitHub</a> · <a href="https://linkedin.com/in/ersin-elmas" target="_blank" rel="noreferrer">LinkedIn</a></p>
+      </div>
+    </noscript>
+
+    <main id="main-content">
       <section class="hero" id="home">
         <div class="container">
           <div class="grid hero-grid">
@@ -62,7 +94,7 @@
               <div class="section-header">
                 <div>
                   <p class="section-subtitle" data-i18n="hero.profile.heading"></p>
-                  <h3 class="section-title" data-i18n="hero.profile.name"></h3>
+                  <h2 class="section-title" data-i18n="hero.profile.name"></h2>
                 </div>
                 <div class="badge" data-i18n="hero.profile.badge"></div>
               </div>
@@ -73,7 +105,6 @@
                 <span>•</span>
                 <span id="about-phone"></span>
               </div>
-              <p class="muted" data-i18n="about.description"></p>
             </div>
           </div>
         </div>
