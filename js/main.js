@@ -12,10 +12,8 @@ const elements = {
   year: document.getElementById('year'),
   aboutLocation: document.getElementById('about-location'),
   aboutEmail: document.getElementById('about-email'),
-  aboutPhone: document.getElementById('about-phone'),
   aboutDetailLocation: document.getElementById('about-detail-location'),
   aboutDetailEmail: document.getElementById('about-detail-email'),
-  aboutDetailPhone: document.getElementById('about-detail-phone'),
   contactLocation: document.getElementById('contact-location'),
   contactEmail: document.getElementById('contact-email'),
   skillsList: document.getElementById('skills-list'),
@@ -49,7 +47,6 @@ function setTheme(theme) {
 }
 
 function updateThemeButton(theme) {
-  elements.themeButton.textContent = theme === 'dark' ? '🌙' : '☀️';
   elements.themeButton.setAttribute('aria-label', theme === 'dark' ? 'Açık temaya geç' : 'Koyu temaya geç');
 }
 
@@ -192,15 +189,12 @@ function renderContact(contact, about) {
 }
 
 function renderAboutDetails(details) {
-  const { location, email, phone } = details;
+  const { location, email } = details;
   [elements.aboutLocation, elements.aboutDetailLocation, elements.contactLocation].forEach((el) => {
     el.textContent = location;
   });
   [elements.aboutEmail, elements.aboutDetailEmail].forEach((el) => {
     el.textContent = email;
-  });
-  [elements.aboutPhone, elements.aboutDetailPhone].forEach((el) => {
-    el.textContent = phone;
   });
   if (elements.contactEmail) {
     elements.contactEmail.href = `mailto:${email}`;

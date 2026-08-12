@@ -17,12 +17,12 @@
     <meta name="twitter:title" content="Ersin Elmas | Full-Stack Yazılım Geliştirici">
     <meta name="twitter:description" content="Java, Spring Boot, .NET ve React ile mikroservis tabanlı finans uygulamaları geliştiren yazılım geliştirici.">
     <meta name="twitter:image" content="https://ersinelmas.github.io/images/og-image.png">
-    <meta name="theme-color" content="#0f141c">
+    <meta name="theme-color" content="#0a0c0a">
     <link rel="canonical" href="https://ersinelmas.github.io/">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script type="application/ld+json">
     {
@@ -63,7 +63,15 @@
               <button class="toggle-btn" data-lang="tr" aria-pressed="true">TR</button>
               <button class="toggle-btn" data-lang="en" aria-pressed="false">EN</button>
             </div>
-            <button class="theme-btn" id="theme-toggle" aria-label="Açık temaya geç">🌙</button>
+            <button class="theme-btn" id="theme-toggle" aria-label="Açık temaya geç">
+              <svg class="theme-icon icon-sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+              </svg>
+              <svg class="theme-icon icon-moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
           </div>
           <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menüyü aç/kapat">☰</button>
         </div>
@@ -99,11 +107,8 @@
                 <div class="badge" data-i18n="hero.profile.badge"></div>
               </div>
               <div class="meta-row">
-                <span id="about-location"></span>
-                <span>•</span>
-                <span id="about-email"></span>
-                <span>•</span>
-                <span id="about-phone"></span>
+                <span class="skill-badge icon-badge icon-location"><svg class="badge-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C7.58 2 4 5.58 4 10c0 5.25 6.72 11.32 7 11.58a1.5 1.5 0 0 0 2 0C13.28 21.32 20 15.25 20 10c0-4.42-3.58-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg><span id="about-location"></span></span>
+                <span class="skill-badge icon-badge icon-email"><svg class="badge-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M2.28 5.6A2 2 0 0 1 4 4.5h16a2 2 0 0 1 1.72 1.1L12 12 2.28 5.6z"/><path d="M22 7.4v10.6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7.4l9.32 6.13a1.2 1.2 0 0 0 1.36 0L22 7.4z"/></svg><span id="about-email"></span></span>
               </div>
             </div>
           </div>
@@ -119,9 +124,8 @@
           <div class="card">
             <p class="muted" data-i18n="about.description"></p>
             <div class="tag-row" aria-label="Contact details">
-              <span class="skill-badge" id="about-detail-location"></span>
-              <span class="skill-badge" id="about-detail-email"></span>
-              <span class="skill-badge" id="about-detail-phone"></span>
+              <span class="skill-badge icon-badge icon-location"><svg class="badge-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C7.58 2 4 5.58 4 10c0 5.25 6.72 11.32 7 11.58a1.5 1.5 0 0 0 2 0C13.28 21.32 20 15.25 20 10c0-4.42-3.58-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg><span id="about-detail-location"></span></span>
+              <span class="skill-badge icon-badge icon-email"><svg class="badge-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M2.28 5.6A2 2 0 0 1 4 4.5h16a2 2 0 0 1 1.72 1.1L12 12 2.28 5.6z"/><path d="M22 7.4v10.6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7.4l9.32 6.13a1.2 1.2 0 0 0 1.36 0L22 7.4z"/></svg><span id="about-detail-email"></span></span>
             </div>
           </div>
         </div>
@@ -190,9 +194,9 @@
               <h3 data-i18n="contact.headline"></h3>
               <p class="muted" data-i18n="contact.description"></p>
               <div class="tag-row">
-                <span class="skill-badge" id="contact-location"></span>
-                <a class="skill-badge" href="https://github.com/ersinelmas" target="_blank" rel="noreferrer">GitHub</a>
-                <a class="skill-badge" href="https://linkedin.com/in/ersin-elmas" target="_blank" rel="noreferrer">LinkedIn</a>
+                <span class="skill-badge icon-badge icon-location"><svg class="badge-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C7.58 2 4 5.58 4 10c0 5.25 6.72 11.32 7 11.58a1.5 1.5 0 0 0 2 0C13.28 21.32 20 15.25 20 10c0-4.42-3.58-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg><span id="contact-location"></span></span>
+                <a class="skill-badge icon-badge icon-github" href="https://github.com/ersinelmas" target="_blank" rel="noreferrer"><svg class="badge-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>GitHub</a>
+                <a class="skill-badge icon-badge icon-linkedin" href="https://linkedin.com/in/ersin-elmas" target="_blank" rel="noreferrer"><svg class="badge-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.5 8.5h3v12h-3v-12zm6 0h2.9v1.64h.04c.4-.76 1.4-1.56 2.86-1.56 3.06 0 3.63 2 3.63 4.62v7.3h-3v-6.47c0-1.54-.03-3.53-2.15-3.53-2.15 0-2.48 1.68-2.48 3.42v6.58h-3v-12z"/></svg>LinkedIn</a>
               </div>
             </div>
             <div>
