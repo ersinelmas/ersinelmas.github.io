@@ -5,7 +5,7 @@ const state = {
 };
 
 const elements = {
-  langButtons: document.querySelectorAll('.toggle-btn[data-lang]'),
+  langToggle: document.getElementById('lang-toggle'),
   themeButton: document.getElementById('theme-toggle'),
   navLinks: document.getElementById('nav-links'),
   menuToggle: document.getElementById('menu-toggle'),
@@ -65,11 +65,13 @@ function setLanguage(lang) {
   state.lang = lang;
   localStorage.setItem('preferredLang', lang);
   document.documentElement.lang = lang;
-  elements.langButtons.forEach((btn) => {
-    const isActive = btn.dataset.lang === lang;
-    btn.setAttribute('aria-pressed', isActive);
-    btn.classList.toggle('active', isActive);
-  });
+  elements.langToggle.textContent = lang.toUpperCase();
+  elements.langToggle.setAttribute('aria-label', lang === 'tr' ? 'İngilizceye geç' : 'Türkçeye geç');
+}
+
+function toggleLanguage() {
+  setLanguage(state.lang === 'tr' ? 'en' : 'tr');
+  render();
 }
 
 function updateMeta(meta) {
@@ -231,13 +233,7 @@ async function render() {
 }
 
 function bindEvents() {
-  elements.langButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const { lang } = btn.dataset;
-      setLanguage(lang);
-      render();
-    });
-  });
+  elements.langToggle.addEventListener('click', toggleLanguage);
 
   elements.themeButton.addEventListener('click', toggleTheme);
 

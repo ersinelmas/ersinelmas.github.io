@@ -14,6 +14,7 @@
   --max-width: 1100px;
   --radius: 10px;
   --gutter: 20px;
+  --control-size: 40px;
   --button-text: #0a0c0a;
   --eyebrow-text: var(--accent);
 }
@@ -119,13 +120,16 @@ button:focus-visible {
 .brand {
   display: inline-flex;
   align-items: center;
-  padding: 6px;
+  justify-content: center;
+  width: var(--control-size);
+  height: var(--control-size);
+  padding: 0;
   border-radius: 8px;
 }
 
 .brand img {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
 
 .nav-links {
@@ -157,32 +161,35 @@ button:focus-visible {
 }
 
 .toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--control-size);
+  height: var(--control-size);
+  padding: 0;
   border: 1px solid var(--border);
   background: var(--muted-surface);
   color: var(--text);
-  padding: 8px 12px;
-  border-radius: 6px;
+  border-radius: 8px;
   font-family: var(--font-mono);
+  font-size: 13px;
   font-weight: 500;
   cursor: pointer;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.toggle-btn[aria-pressed='true'] {
-  border-color: var(--accent);
-  transform: translateY(-1px);
-}
-
 .theme-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--control-size);
+  height: var(--control-size);
+  padding: 0;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  padding: 8px 10px;
   border-radius: 8px;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
@@ -215,11 +222,16 @@ button:focus-visible {
 
 .menu-toggle {
   display: none;
+  align-items: center;
+  justify-content: center;
+  width: var(--control-size);
+  height: var(--control-size);
+  padding: 0;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  padding: 8px 10px;
   border-radius: 8px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -553,6 +565,10 @@ button:focus-visible {
 }
 
 @media (max-width: 640px) {
+  :root {
+    --gutter: 24px;
+  }
+
   .site-header {
     --header-height: 0px;
     margin-bottom: 10px;
@@ -563,8 +579,8 @@ button:focus-visible {
     padding: 6px 0;
   }
 
-  .brand {
-    padding: 4px;
+  .hero {
+    padding: 64px 0 56px;
   }
 
   .header-actions {
@@ -574,15 +590,6 @@ button:focus-visible {
 
   .controls {
     gap: 6px;
-  }
-
-  .toggle-btn {
-    padding: 8px 10px;
-  }
-
-  .theme-btn,
-  .menu-toggle {
-    padding: 8px 10px;
   }
 
   .section {
