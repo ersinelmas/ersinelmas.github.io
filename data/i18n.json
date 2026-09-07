@@ -116,6 +116,15 @@
             "repo": "https://github.com/ersinelmas/Turkcell-CRM",
             "demo": null
           }
+        },
+        {
+          "name": "Survey App",
+          "description": "Admin ve kullanıcı rolleriyle anket oluşturma, atama ve raporlama sağlayan; JWT tabanlı kimlik doğrulama, refresh token rotation ve Clean Architecture ile geliştirilmiş uçtan uca anket uygulaması.",
+          "tech": [".NET 8", "React", "TypeScript", "PostgreSQL", "Docker", "JWT"],
+          "links": {
+            "repo": "https://github.com/ersinelmas/survey-app",
+            "demo": "https://surveyapp.ersinelmas.com"
+          }
         }
       ]
     },
@@ -264,6 +273,15 @@
           "links": {
             "repo": "https://github.com/ersinelmas/Turkcell-CRM",
             "demo": null
+          }
+        },
+        {
+          "name": "Survey App",
+          "description": "End-to-end survey platform with admin and user roles for creating, assigning, and reporting on surveys, built with JWT auth, refresh token rotation, and Clean Architecture.",
+          "tech": [".NET 8", "React", "TypeScript", "PostgreSQL", "Docker", "JWT"],
+          "links": {
+            "repo": "https://github.com/ersinelmas/survey-app",
+            "demo": "https://surveyapp.ersinelmas.com"
           }
         }
       ]
